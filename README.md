@@ -9,3 +9,9 @@ Un catálogo de datos utiliza metadatos (datos que describen o resumen datos) pa
 - Visualizaciones de datos y cuadros de mando
 - Modelos de aprendizaje automático
 - Conexiones entre bases de datos
+
+El catálogo también proporciona herramientas que permiten a los usuarios hacer lo siguiente:
+
+- Buscar en el catálogo
+- Automatice el descubrimiento de datos potencialmente relevantes para los que no buscaron específicamente
+- Gobernar el uso de los datos de conformidad con las regulaciones de la industria o gubernamentales
