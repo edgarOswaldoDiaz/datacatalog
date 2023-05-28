@@ -1,0 +1,11 @@
+{
+  "entity": {
+    "typeName": "DataSet",
+    "attributes": {
+      "owner": "LOBERA_FEDERICO_NANCY_MARILU",
+      "qualifiedName": "DataSet_proveedor_datos",
+      "description": "INEGI_PUERTA_3_NIVEL_2_HORARIO_08:30_a_16:30_TELEFONO:_4499105300_ext:_4005",
+      "name": "Subdireccion_de_generacion__de_estadisticas_de_empleo_y_percepcion"
+    }
+  }
+}

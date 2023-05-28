@@ -1,0 +1,30 @@
+
+   "entity" : {
+     "typeName" : "map_reduce_process" ,
+     "attributes" : {
+       "owner" : "INEGI" ,
+       "outputs" : [ 
+        { "guid" : "bb77adee-caa8-4560-8aa3-2a83242d7ccf" ,
+           "typeName" : "DataSet" 
+        }, 
+        { "guid" : "c35aa0b9-21a0-4859-9499-cf2b22963a75" ,
+           "typeName" : "DataSet" 
+        },
+        { "guid" : "b73a11ce-88bd-4639-a192-f574158e0c39" ,
+           "typeName" : "DataSet" 
+        }
+      ], "qualifiedName" :                    
+      "ENOEtemasmapReduceProcess@mapReduce Temas" ,
+       "displayName" : "Mapa Temas Encuesta" ,
+       "inputs" : [ 
+        { "guid" : "f176c884-3ef7-4d8a-b274-97f447fcc897" ,
+           "typeName" : "DataSet" 
+        } 
+      ], "description" : "Elaboración de temas" ,
+       "name" : "Temas ENOE" ,
+       "startTime" : 1643363556 ,
+      "endTime" : 1643363556  ,     
+      "processId" : "mapReduceProcess" 
+    } 
+  } 
+}

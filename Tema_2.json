@@ -1,0 +1,11 @@
+{
+  "entity": {
+    "typeName": "DataSet",
+    "attributes": {
+      "owner": "INEGI",
+      "qualifiedName": "DataSet_tema_2",
+      "description": "Tema_2_Acceso_a_atencion_médica_por_parte_del_trabajo_Cuestionario_Amplio",
+      "name": "Tema_2"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "entityDefs": [
+    {
+      "category": "ENTITY",
+      "name": "merger_process",
+      "description": "Merge the data",
+      "attributeDefs": [
+        {
+          "name": "startTime",
+          "typeName": "long",
+          "isOptional": true,
+          "cardinality": "SINGLE",
+          "valuesMinCount": 0,
+          "valuesMaxCount": 1,
+          "isUnique": false,
+          "isIndexable": false,
+          "includeInNotification": false,
+          "searchWeight": -1
+        },
+        {
+          "name": "endTime",
+          "typeName": "long",
+          "isOptional": true,
+          "cardinality": "SINGLE",
+          "valuesMinCount": 0,
+          "valuesMaxCount": 1,
+          "isUnique": false,
+          "isIndexable": false,
+          "includeInNotification": false,
+          "searchWeight": -1
+        }
+      ],
+      "superTypes": [
+        "Process"
+      ]
+    }
+  ]
+}

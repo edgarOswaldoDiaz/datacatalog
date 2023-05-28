@@ -1,0 +1,12 @@
+{
+  "entity": {
+    "typeName": "DataSet",
+    "attributes": {
+      "owner": "INEGI",
+      "qualifiedName": "DataSet_temas_incluye",
+      "description": "Temas",
+      "name": "Temas_incluye"
+    }
+  }
+}
+

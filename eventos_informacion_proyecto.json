@@ -1,0 +1,11 @@
+{
+  "entity": {
+    "typeName": "DataSet",
+    "attributes": {
+      "owner": "INEGI",
+      "qualifiedName": "DataSet_eventos_proyecto",
+      "description": "Universo_Las_personas_residentes_habituales_de_las_viviendas_seleccionadas_Cobertura_temporal_2005_en_adelante",
+      "name": "Proyecto_encuesta_nacional_de_ocupacion_y_empleo"
+    }
+  }
+}

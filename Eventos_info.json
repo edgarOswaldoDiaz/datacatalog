@@ -1,0 +1,11 @@
+{
+  "entity": {
+    "typeName": "DataSet",
+    "attributes": {
+      "owner": "INEGI",
+      "qualifiedName": " DataSet_ENOE_EDAD15_2005_2022",
+      "description": "eventos_info",
+      "name": "Eventos_de_ENOE15"
+    }
+  }
+}

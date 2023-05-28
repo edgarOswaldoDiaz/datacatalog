@@ -1,0 +1,27 @@
+{
+   "entity" : {
+     "typeName" : "map_reduce_process" ,
+     "attributes" : {
+       "owner" : "INEGI" ,
+       "outputs" : [ 
+        { "guid" : "13a761b7-5997-423c-9b39-f36579f701cf" ,
+           "typeName" : "DataSet" 
+        }, 
+        { "guid" : "b12defd8-0696-4ad3-9f3c-9f83b3c27eb8" ,
+           "typeName" : "DataSet" 
+        }
+      ], "qualifiedName" :                   
+      "ENOEeventosinfomapReduceProcess@mapReduce Proyecto Cuestionario" ,
+       "displayName" : "Mapa Proyecto Cuestionario" ,
+       "inputs" : [ 
+        { "guid" : "54b47cf7-92fc-48cc-a080-1d1e3730577a " ,
+           "typeName" : "DataSet" 
+        } 
+      ], "description" : "Proceso de consultas o de almacenamiento" ,
+       "name" : "Componentes eventos ENOE" ,
+       "startTime" : 01/05/2022 ,
+      "endTime" : 1643363556  ,     
+      "processId" : "mapReduceProcess" 
+    } 
+  } 
+}

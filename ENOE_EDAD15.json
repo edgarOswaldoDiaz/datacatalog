@@ -1,0 +1,11 @@
+{
+  "entity": {
+    "typeName": "DataSet",
+    "attributes": {
+      "owner": "INEGI",
+      "qualifiedName": "DataSet_ENOE_EDAD15",
+      "description": "Publicado_con_informacion_definitiva_disponible_para_consulta_primer_trimestre_2005_al_tercer_trimestre_2022_Modelo_de_datos_relacional_nivel_detalle",
+      "name": "Encuesta_nacional_de_ocupacion_y_empleo_poblacion_de_15_años_y_más_de_edad"
+    }
+  }
+}

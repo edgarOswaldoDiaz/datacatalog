@@ -1,0 +1,11 @@
+{
+  "entity": {
+    "typeName": "DataSet",
+    "attributes": {
+      "owner": "INEGI",
+      "qualifiedName": "DataSet_eventos_cuestionario",
+      "description": "Evento_implementado_en_ENOE15",
+      "name": "Cuestionario_ampliado_primera_version"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "entity": {
+    "typeName": "DataSet",
+    "attributes": {
+      "owner": "INEGI",
+      "qualifiedName": "DataSet_tema_3",
+      "description": "Tema_3_Busqueda_de_otro_trabajo",
+      "name": "Tema_3"
+    }
+  }
+}

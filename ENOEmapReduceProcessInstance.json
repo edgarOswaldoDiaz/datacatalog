@@ -1,0 +1,30 @@
+{
+   "entity" : {
+     "typeName" : "map_reduce_process" ,
+     "attributes" : {
+       "owner" : "INEGI" ,
+       "outputs" : [ 
+        { "guid" : "b71873f5-21cd-46e5-91e3-3340b07e7e3d" ,
+           "typeName" : "DataSet" 
+        }, 
+        { "guid" : "54b47cf7-92fc-48cc-a080-1d1e3730577a" ,
+           "typeName" : "DataSet" 
+        }, 
+        { "guid" : "f176c884-3ef7-4d8a-b274-97f447fcc897" ,
+           "typeName" : "DataSet"
+        } 
+      ], "qualifiedName" :                    
+      "ENOEmapReduceProcess@mapReduce Proveedor Eventos Temas" ,
+       "displayName" : "Mapa Reducir ventas Proveedor Eventos Temas" ,
+       "inputs" : [ 
+        { "guid" : "1b79e829-b1fb-41b7-863d-e7612cad8a73" ,
+           "typeName" : "DataSet" 
+        } 
+      ], "description" : "Proceso de consultas o de almacenamiento" ,
+       "name" : "Componentes ENOE" ,
+       "startTime" : 1643363556 ,
+      "endTime" : 1643363556  ,     
+      "processId" : "mapReduceProcess" 
+    } 
+  } 
+}
