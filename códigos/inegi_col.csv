@@ -1,0 +1,14 @@
+name,description,col_type,sort_order,database,cluster,schema,table_name,badges
+id,"aqui va el id","int",1,hive,inegi_cluster,inegi_schema,inegi_table1,PK
+nombre,"aqui va el nombre","string",2,hive,inegi_cluster,inegi_schema,inegi_table1,PII
+direccion,"aqui va la direccion","string",3,hive,inegi_cluster,inegi_schema,inegi_table1,"FK,PII"
+telefono,"aqui va el telefono","bigint",4,hive,inegi_cluster,inegi_schema,inegi_table1,
+columna inegi,"aqui va la columna inegi","float",5,hive,inegi_cluster,inegi_schema,inegi_table1,
+name,"describiendo columna","string",1,dynamo,inegi_cluster,inegi_schema,inegi_table2,
+direction,"col2 description","string",2,dynamo,inegi_cluster,inegi_schema,inegi_table2,
+address,"col3 description","string",3,dynamo,inegi_cluster,inegi_schema,inegi_table2,
+phone,"col4 description","int",4,dynamo,inegi_cluster,inegi_schema,inegi_table2,
+id,"view col description","int",1,hive,inegi_cluster,inegi_schema,inegi_view1,
+id,"col1 description","int",1,hive,inegi_cluster,inegi_schema,test_table3_inegi,
+numero_empleado,"col1 description","bigint",1,delta,inegi_cluster,inegi_schema,test's_table4_inegi
+id_empleado,"col2 nested delta column","struct<col3:string,col4:bigint>",2,delta,inegi_cluster,inegi_schema,delta_test_table_inegi

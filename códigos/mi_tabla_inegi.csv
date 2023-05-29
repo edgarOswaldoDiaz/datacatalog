@@ -1,0 +1,7 @@
+database,cluster,schema,name,description,tags,is_view,description_source
+hive,inegi_cluster,inegi_schema,inegi_table1,"1st inegi table","tag1,tag2,tabla_inegi",false,
+dynamo,inegi_cluster,inegi_schema,inegi_table2,"2nd inegi table","recommended, tabla_inegi",false,
+hive,inegi_cluster,inegi_schema,inegi_view1,"1st inegi view","etiqueta1,view_inegi",true,
+hive,inegi_cluster,inegi_schema,test_table3_inegi,"3rd inegi test","needs_documentation,tabla_inegi",false,
+hive,inegi_cluster,inegi_schema,"test's_table4_inegi","4th inegi test","needs_documentation,tabla_inegi",false,
+delta,inegi_cluster,inegi_schema,"delta_test_table_inegi","test table for delta inegi","delta,tabla_inegi",false

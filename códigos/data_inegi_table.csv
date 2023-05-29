@@ -1,0 +1,3 @@
+database,cluster,schema,name,description,tags,is_view,description_source
+minio,inegi_cluster,usuario_base_datos,TC_ACUDIO_BOLSA_TRABAJO,"Total de delincuentes sentenciados del fuero común\n","",false,"Manual with RStudio"
+minio,inegi_cluster,usuario_base_datos,TC_ACUDIO_LUGAR_TRABAJO,"Total de delincuentes sentenciados del fuero común\n","",false,"Manual with RStudio"

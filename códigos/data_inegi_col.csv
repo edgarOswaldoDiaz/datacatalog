@@ -1,0 +1,5 @@
+name,description,col_type,sort_order,database,cluster,schema,table_name,badges
+ACUDIO_BOLSA_TRABAJO,"Código que especifica si la persona hizo trámites en una agencia o bolsa de trabajo privada para buscar empleo","Number",1,minio,inegi_cluster,usuario_base_datos,TC_ACUDIO_BOLSA_TRABAJO,PK
+DESCRIPCION,"Descripción de la clave que indica si la persona hizo trámites en una agencia o bolsa de trabajo privada para buscar empleo","Varchar2",2,minio,inegi_cluster,usuario_base_datos,TC_ACUDIO_BOLSA_TRABAJO,
+ACUDIO_LUGAR_TRABAJO,"Código que especifica si la persona acudió directamente al lugar de trabajo (fábrica, tienda, taller) para buscar empleo","Number",3,minio,inegi_cluster,usuario_base_datos,TC_ACUDIO_LUGAR_TRABAJO,PK
+DESCRIPCION,"Descripción de la clave que indica si la persona acudió directamente al lugar de trabajo (fábrica, tienda, taller) para buscar empleo","Varchar2",4,minio,inegi_cluster,usuario_base_datos,TC_ACUDIO_LUGAR_TRABAJO
