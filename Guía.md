@@ -1,4 +1,8 @@
-# Guía para trabajar contenedor de Amundsen - RedHat 8.7 - Podman - VMware.
+# Guía para ingestar datos en amundsen
+
+En la terminal de Linux ejecutar los siguientes comandos, todo en modo superusuario.
+-descargar el proyecto de amundsen.
+#git clone --recursive https://github.com/amundsen-io/amundsen.git
 
 ## Recursos necesarios principales.
 Cuando se trabaja contenerización se recomienda utilizar un sistema operativo Linux, en este apartado y en la practica del proyecto se utiliza un sistema 
