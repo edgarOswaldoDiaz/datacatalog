@@ -7,22 +7,25 @@ En la terminal de Linux ejecutar los siguientes comandos, todo en modo superusua
 #cd amundsen/ 
 - Edita el archivo docker-amundsen.yml con
 #vi docker-amundsen.yml 
-- Posteriormente concede permisos a los volumenes de Neo4j, agregando :z en las lineas de los volumenes de neo4j, como se muestra a continuación, cuida que estas 4 líneas de código queden al mismo nivel
+- Posteriormente concede permisos a los volumenes de Neo4j, agregando :z en las 3 primeras lineas de los volumenes de neo4j, como se muestra a continuación, cuida que estas 4 líneas de código queden al mismo nivel
 ![imagen](https://github.com/edgarOswaldoDiaz/datacatalog/assets/91812737/f87d24ee-9329-46e4-b2a6-8e0b4659e9e7)
+- Guarda el archivo con estos permisos ejecuta el siguiente comando para levantar todos los servicios de amundsen
+#podman-compose -f docker-amundsen-yml up
+- Abre una nueva terminal, descarga los siguientes archivos y pegalos en la siguiente ruta - amundsen/databuilder/example/sample_data
+[data_col.csv](https://github.com/edgarOswaldoDiaz/datacatalog/files/11670436/data_col.csv)
+[data_owner.csv](https://github.com/edgarOswaldoDiaz/datacatalog/files/11670439/data_owner.csv)
+[data_table.csv](https://github.com/edgarOswaldoDiaz/datacatalog/files/11670441/data_table.csv)
+- Abre una nueva terminal, descarga el siguiente script y pegalo en la siguiente ruta - amundsen/databuilder/example/scripts, este script es de Python por lo que deberás renombrarlo con la extension .py
+[data_json.txt](https://github.com/edgarOswaldoDiaz/datacatalog/files/11670728/data_json.txt)
+- Abre una nueva terminal y dirigete a la carpeta de databuilder con
+#cd databuilder/
+- Ejecuta los siguientes comandos 
+#python3 -m venv venv
+#source venv/bin/activate
+#pip3 install --upgrade pip
+#pip3 install -r requirements.txt
+#python3 setup.py install
+- Ejecuta el script
+#python3 example/scripts/data_json.py
+- Abre tu navegador en http://localhost:5000 y comprueba que tienes 189 datasets realizando una busqueda.
 
-
-## Recursos necesarios principales.
-Cuando se trabaja contenerización se recomienda utilizar un sistema operativo Linux, en este apartado y en la practica del proyecto se utiliza un sistema 
-RedHat con la version 8.7, este sistema es recomendable de usar ya que tiene instalada por defecto la herramienta Podman (el administrador de pods) que es una herramienta 
-open source para desarrollar, gestionar y ejecutar los contenedores en los sistemas Linux.
-
-Si se está haciendo uso de un sistema operativo Windows se puede optar por la opción de instalar RedHat en una máquina virtual, entonces se necesitan realizar las siguientes 
-acciones:
-- Instalar VMware.
-- Crear una máquina virtual con una imagen de RedHat.
-- Contenerización con Podman
-
-### MVware
-Para instalar MVware es posible dirigirse al sitio oficial, descargar el instalador, e instalar el programa, la instalación es sencilla. 
-
-[Descargar MVware Workstation](https://www.vmware.com/mx/products/workstation-pro/workstation-pro-evaluation.html "Descargar MVware Workstation")
