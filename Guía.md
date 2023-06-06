@@ -8,11 +8,7 @@ En la terminal de Linux ejecutar los siguientes comandos, todo en modo superusua
 - Edita el archivo docker-amundsen.yml con
 #vi docker-amundsen.yml 
 - Posteriormente concede permisos a los volumenes de Neo4j, agregando :z en las lineas de los volumenes de neo4j, como se muestra a continuación, cuida que estas 4 líneas de código queden al mismo nivel
-  volumes:
-    - ./example/docker/neo4j/conf:/var/lib/neo4j/conf:z
-    - ./example/docker/neo4j/plugins:/var/lib/neo4j/plugins:z
-    - ./example/backup:/backup:z
-    - neo4j_data:/data
+![imagen](https://github.com/edgarOswaldoDiaz/datacatalog/assets/91812737/f87d24ee-9329-46e4-b2a6-8e0b4659e9e7)
 
 
 ## Recursos necesarios principales.
