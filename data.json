@@ -1,0 +1,11 @@
+{
+    "nombre": "Juan Pérez",
+    "edad": 30,
+    "profesion": "Desarrollador web",
+    "hobbies": [
+      "Programar",
+      "Leer",
+      "Ver películas"
+    ]
+  }
+  
