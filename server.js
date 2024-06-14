@@ -88,7 +88,7 @@ app.get('/read-parquet', async (req, res) => {
   while (record = await cursor.next()) {
     results.push(record);
   }
-  
+
   await reader.close();
   res.json(results);
 });
