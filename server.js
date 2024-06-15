@@ -87,7 +87,7 @@ app.get('/read-parquet', async (req, res) => {
   while (record = await cursor.next()) {
     results.push(record);
   }
-  
+
   await reader.close();
   res.json(results);
 });
@@ -152,7 +152,7 @@ app.post('/create-pdf', async (req, res) => {
 
 // Rutas para manipulación de GeoJSON
 app.post('/convert-to-geojson', (req, res) => {
-  const data = req.body;
+  const data = req.body; // Expects an array of objects with coordinates
   const geo = geojson.parse(data, { Point: ['coordinates[1]', 'coordinates[0]'] });
   res.json(geo);
 });
