@@ -10,6 +10,8 @@ const ffmpeg = require('fluent-ffmpeg');
 const { PDFDocument } = require('pdf-lib');
 const fs = require('fs');
 const geojson = require('geojson');
+const axios = require('axios');
+
 const app = express();
 app.use(bodyParser.json());
 
@@ -87,7 +89,7 @@ app.get('/read-parquet', async (req, res) => {
   while (record = await cursor.next()) {
     results.push(record);
   }
-  
+
   await reader.close();
   res.json(results);
 });
@@ -152,7 +154,7 @@ app.post('/create-pdf', async (req, res) => {
 
 // Rutas para manipulación de GeoJSON
 app.post('/convert-to-geojson', (req, res) => {
-  const data = req.body;
+  const data = req.body; // Expects an array of objects with coordinates
   const geo = geojson.parse(data, { Point: ['coordinates[1]', 'coordinates[0]'] });
   res.json(geo);
 });
@@ -164,6 +166,67 @@ app.post('/convert-tiff', (req, res) => {
       if (err) throw err;
       res.send('TIFF converted to PNG successfully.');
     });
+});
+
+// Rutas para integración con Apache Atlas
+const ATLAS_BASE_URL = 'http://localhost:21000/api/atlas/v2';
+
+app.get('/atlas/entities', async (req, res) => {
+  try {
+    const response = await axios.get(`${ATLAS_BASE_URL}/entity/bulk`, {
+      auth: {
+        username: 'admin',
+        password: 'admin'
+      }
+    });
+    res.json(response.data);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+});
+
+app.post('/atlas/entity', async (req, res) => {
+  try {
+    const response = await axios.post(`${ATLAS_BASE_URL}/entity`, req.body, {
+      auth: {
+        username: 'admin',
+        password: 'admin'
+      }
+    });
+    res.json(response.data);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+});
+
+// Rutas para integración con Amundsen (Search y Metadata)
+const AMUNDSEN_SEARCH_URL = 'http://localhost:5001';
+const AMUNDSEN_METADATA_URL = 'http://localhost:5002';
+
+app.get('/amundsen/search', async (req, res) => {
+  try {
+    const response = await axios.get(`${AMUNDSEN_SEARCH_URL}/search/v0/table`, {
+      params: {
+        q: req.query.q
+      }
+    });
+    res.json(response.data);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+});
+
+app.get('/amundsen/table_metadata', async (req, res) => {
+  try {
+    const response = await axios.get(`${AMUNDSEN_METADATA_URL}/metadata/v0/table`, {
+      params: {
+        key: req.query.key
+      }
+    });
+    res.json(response.data);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
 });
 
 const PORT = process.env.PORT || 5000;
