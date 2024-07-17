@@ -51,6 +51,19 @@ El objetivo principal de este proyecto es llevar a cabo una revisión exhaustiva
 
 ---
 
+#### **Requisitos Recomendados**
+
+**Hardware Recomendado:**
+- **Procesador:** Intel Core i5 (o equivalente) o superior
+- **Memoria:** 8 GB de RAM o más
+- **Almacenamiento:** 16 GB de espacio libre en disco o más
+
+**Software Recomendado:**
+- **Sistema Operativo:**
+  - Windows 10 (64 bits) Pro, Enterprise, o Education, Windows 11
+  - macOS 10.15 (Catalina) o más reciente
+  - Linux: Ubuntu 18.04, Fedora 28, o equivalentes
+
 
 ------------------------
 Referencias 
