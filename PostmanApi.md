@@ -26,7 +26,20 @@
   12. Convertir a GeoJSON
   13. Convertir TIFF
 - Referencias APA
-- Conclusión
+- Conclusión <br>
+<hr> 
+Introducción<br>
+Este documento detalla el desarrollo y la implementación de una API en Postman, llevada a cabo por los estudiantes Ernesto Yael Ponce Gómez, Lauro Manuel Cárdenas Herrera, y Cristian Ivan Lopes Meneses, bajo la asesoría del profesor Edgar Oswaldo Díaz en el Laboratorio de Ciencia de Datos del Instituto Nacional de Estadísticas y Geografía (INEGI). La fecha de culminación del proyecto es el 22 de julio del 2024.
+
+El propósito de este proyecto es proporcionar una guía exhaustiva sobre la instalación y configuración de diversas herramientas necesarias para el desarrollo de servicios API, así como la manipulación de diferentes tipos de datos. El documento incluye instrucciones detalladas para la instalación de Postman y WSL2, la configuración de contenedores para la API de Postman, y ejemplos de código para la creación y manipulación de datos en varios formatos, como CSV, JSON, Parquet, Avro, imágenes, audio, video, PDF y GeoJSON.
+
+A lo largo del documento se describen los procedimientos y comandos necesarios para:
+
+Instalar y configurar las herramientas requeridas.
+Crear y configurar un proyecto en Node.js.
+Implementar rutas para manipular diferentes tipos de datos mediante una API RESTful.
+Realizar pruebas de contenedores y solicitudes en Postman.
+Este proyecto no solo busca crear una API funcional y versátil, sino también proporcionar un aprendizaje práctico y profundo en la manipulación de datos y la configuración de entornos de desarrollo. La experiencia obtenida y los desafíos superados a lo largo de este proyecto aportan valiosas lecciones y habilidades que serán de gran utilidad en futuros desarrollos y en el campo de la ciencia de datos y el desarrollo de software en general. <br>
 
 
 
