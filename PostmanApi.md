@@ -1,4 +1,6 @@
-<img src="imagenesdoc/Portada.png" alt="Portada" width="200" height="350"/>
+<div style="text-align: center;">
+  <img src="imagenesdoc/Portada.png" alt="Portada" width="350"/>
+</div>
 
 ## Índice
 
