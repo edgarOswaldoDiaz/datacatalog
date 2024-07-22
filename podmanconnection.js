@@ -130,7 +130,7 @@ app.post('/convert-audio', upload.single('audio'), (req, res) => {
   const filePath = req.file.path;
   const outputFilePath = 'output.wav';
 
-  ffmpeg(filePath)
+  ffmpeg(filePath)ae
     .toFormat('wav')
     .save(outputFilePath)
     .on('end', () => {
