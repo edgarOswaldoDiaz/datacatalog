@@ -1,4 +1,4 @@
-![Potada](imagenesdoc/Portada.png) <br> 
+<img src="imagenesdoc/Portada.png" alt="Portada" width="500"/>
 
 ## Índice
 
