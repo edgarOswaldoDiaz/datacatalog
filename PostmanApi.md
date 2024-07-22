@@ -1,3 +1,5 @@
+![Potada](imagenesdoc/Portada.png) <br> 
+
 ## Índice
 
 - INTEGRANTES
