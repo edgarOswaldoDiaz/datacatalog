@@ -1,4 +1,4 @@
-<img src="imagenesdoc/Portada.png" alt="Portada" width="300"/>
+<img src="imagenesdoc/Portada.png" alt="Portada" width="350"/>
 
 ## Índice
 
