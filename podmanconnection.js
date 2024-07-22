@@ -12,6 +12,8 @@ const { PDFDocument } = require('pdf-lib');
 const fs = require('fs');
 const geojson = require('geojson');
 const axios = require('axios');
+const multer = require('multer');
+const upload = multer({ dest: 'uploads/' });
 
 const app = express();
 app.use(bodyParser.json());
@@ -124,12 +126,18 @@ app.post('/process-image', (req, res) => {
 });
 
 // Rutas para manipulación de audio
-app.post('/convert-audio', (req, res) => {
-  ffmpeg('input.mp3')
+app.post('/convert-audio', upload.single('audio'), (req, res) => {
+  const filePath = req.file.path;
+  const outputFilePath = 'output.wav';
+
+  ffmpeg(filePath)
     .toFormat('wav')
-    .save('output.wav')
+    .save(outputFilePath)
     .on('end', () => {
       res.send('Audio converted successfully.');
+    })
+    .on('error', (err) => {
+      res.status(500).send('Audio conversion failed: ' + err.message);
     });
 });
 
