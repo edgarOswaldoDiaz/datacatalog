@@ -293,6 +293,7 @@ INSERT INTO test_table (name) VALUES ('Test Data');
 • URL: http://localhost:5000/read-csv <br>
 • Haz clic en "Send" para enviar la solicitud. <br>
 • Deberías ver los datos del archivo CSV como respuesta. <br>
+<img src=imagne>
 
 #### 2. Escribir CSV:
 
