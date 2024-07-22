@@ -28,8 +28,6 @@
 - Referencias APA
 - Conclusión
 
-
-
 ## Requerimientos de instalación
 
 ### Instalación de Postman
@@ -283,7 +281,7 @@ INSERT INTO test_table (name) VALUES ('Test Data');
    • Método: POST <br>
    • URL: http://localhost:5000/write-csv <br>
    • En la pestaña "Body", selecciona "raw" y elige "JSON" como tipo de dato. <br>
-   • Agrega un JSON como el siguiente: 
+   • Agrega un JSON como el siguiente:
    json
    Copiar código
    [
@@ -330,60 +328,61 @@ INSERT INTO test_table (name) VALUES ('Test Data');
    • Haz clic en "Send" para enviar la solicitud. <br>
    • Deberías ver el contenido del archivo Avro. <br>
 
-### 8.  Procesar Imagen:
-•	Método: POST <br> 
-•	URL: http://localhost:5000/process-image <br> 
-•	Haz clic en "Send" para enviar la solicitud. <br> 
-•	Deberías ver un mensaje indicando que la imagen se ha procesado correctamente. <br>
- 
- 
+### 8. Procesar Imagen:
+
+• Método: POST <br>
+• URL: http://localhost:5000/process-image <br>
+• Haz clic en "Send" para enviar la solicitud. <br>
+• Deberías ver un mensaje indicando que la imagen se ha procesado correctamente. <br>
+
 9.  Convertir Audio:
-•	Método: POST <br>
-•	URL: http://localhost:5000/convert-audio <br> 
-•	Haz clic en "Send" para enviar la solicitud. <br> 
-•	Deberías ver un mensaje indicando que el audio se ha convertido correctamente. <br> 
+    • Método: POST <br>
+    • URL: http://localhost:5000/convert-audio <br>
+    • Haz clic en "Send" para enviar la solicitud. <br>
+    • Deberías ver un mensaje indicando que el audio se ha convertido correctamente. <br>
 
-10.  Convertir Video:
-•	Método: POST <br>
-•	URL: http://localhost:5000/convert-video <br>
-•	Haz clic en "Send" para enviar la solicitud. <br>
-•	Deberías ver un mensaje indicando que el video se ha convertido correctamente. <br>
+10. Convertir Video:
+    • Método: POST <br>
+    • URL: http://localhost:5000/convert-video <br>
+    • Haz clic en "Send" para enviar la solicitud. <br>
+    • Deberías ver un mensaje indicando que el video se ha convertido correctamente. <br>
 
-11.  Crear PDF:
-•	Método: POST <br>
-•	URL: http://localhost:5000/create-pdf <br>
-•	Haz clic en "Send" para enviar la solicitud. <br>
-•	Deberías ver un mensaje indicando que el PDF se ha creado correctamente. <br>
- 
-12.  Convertir a GeoJSON:
-•	Método: POST <br>
-•	URL: http://localhost:5000/convert-to-geojson <br>
-•	En la pestaña "Body", selecciona "raw" y elige "JSON" como tipo de dato. <br>
-•	Agrega un JSON como el siguiente: <br>
-json
-Copiar código
-[
-  { "name": "Dinagat Islands", "coordinates": [125.592, 10.05] }
-]
-•	Haz clic en "Send" para enviar la solicitud. <br>
-•	Deberías ver el contenido del archivo GeoJSON. <br>
+11. Crear PDF:
+    • Método: POST <br>
+    • URL: http://localhost:5000/create-pdf <br>
+    • Haz clic en "Send" para enviar la solicitud. <br>
+    • Deberías ver un mensaje indicando que el PDF se ha creado correctamente. <br>
 
-13.  Convertir TIFF:
-•	Método: POST <br>
-•	URL: http://localhost:5000/convert-tiff <br>
-•	Haz clic en "Send" para enviar la solicitud. <br>
-•	Deberías ver un mensaje indicando que el TIFF se ha convertido correctamente. <br>
+12. Convertir a GeoJSON:
+    • Método: POST <br>
+    • URL: http://localhost:5000/convert-to-geojson <br>
+    • En la pestaña "Body", selecciona "raw" y elige "JSON" como tipo de dato. <br>
+    • Agrega un JSON como el siguiente: <br>
+    json
+    Copiar código
+    [
+    { "name": "Dinagat Islands", "coordinates": [125.592, 10.05] }
+    ]
+    • Haz clic en "Send" para enviar la solicitud. <br>
+    • Deberías ver el contenido del archivo GeoJSON. <br>
+
+13. Convertir TIFF:
+    • Método: POST <br>
+    • URL: http://localhost:5000/convert-tiff <br>
+    • Haz clic en "Send" para enviar la solicitud. <br>
+    • Deberías ver un mensaje indicando que el TIFF se ha convertido correctamente. <br>
 
 ## Referencias apa
-1.	Postman documentation overview | Postman Learning Center. (2023, 19 octubre). Postman Learning Center. https://learning.postman.com/docs/introduction/overview/
-2.	Rodríguez, D. (2018, 26 octubre). Archivos JSON con Python: lectura y escritura. Analytics Lane. https://www.analyticslane.com/2018/07/16/archivos-json-con-python/#google_vignette
-3.	GeoJSON—Portal for ArcGIS | Documentación de ArcGIS Enterprise. (s. f.). https://enterprise.arcgis.com/es/portal/latest/use/geojson.htm
-4.	 Iqbal, K. (2019, 10 septiembre). TIFF - Formato de archivo de imagen. https://docs.fileformat.com/es/image/tiff/
-5.	Craigloewen-Msft. (2023, 28 agosto). Instalación de WSL. Microsoft Learn. https://learn.microsoft.com/es-es/windows/wsl/install 
-6.	Equipo editorial de IONOS. (2023, 1 marzo). XAMPP: instalación y primeros pasos. IONOS Digital Guide. https://www.ionos.mx/digitalguide/servidores/herramientas/instala-tu-servidor-local-xampp-en-unos-pocos-pasos/
 
+1. Postman documentation overview | Postman Learning Center. (2023, 19 octubre). Postman Learning Center. https://learning.postman.com/docs/introduction/overview/
+2. Rodríguez, D. (2018, 26 octubre). Archivos JSON con Python: lectura y escritura. Analytics Lane. https://www.analyticslane.com/2018/07/16/archivos-json-con-python/#google_vignette
+3. GeoJSON—Portal for ArcGIS | Documentación de ArcGIS Enterprise. (s. f.). https://enterprise.arcgis.com/es/portal/latest/use/geojson.htm
+4. Iqbal, K. (2019, 10 septiembre). TIFF - Formato de archivo de imagen. https://docs.fileformat.com/es/image/tiff/
+5. Craigloewen-Msft. (2023, 28 agosto). Instalación de WSL. Microsoft Learn. https://learn.microsoft.com/es-es/windows/wsl/install
+6. Equipo editorial de IONOS. (2023, 1 marzo). XAMPP: instalación y primeros pasos. IONOS Digital Guide. https://www.ionos.mx/digitalguide/servidores/herramientas/instala-tu-servidor-local-xampp-en-unos-pocos-pasos/
 
 ## Conclusión
+
 Lauro Manuel Cárdenas Herrera <br>
 Ha sido un proceso exhaustivo y educativo para el equipo. A través de la instalación y configuración de diversas herramientas, la implementación de servicios API, y la manipulación de diferentes tipos de datos, se han alcanzado múltiples aprendizajes clave y se han enfrentado varios desafíos.
 El proyecto no solo ha resultado en la creación de una api funcional y versátil, sino que también ha proporcionado valiosas lecciones y experiencias que serán invaluables para futuros desarrollos. La capacidad de manejar diversos tipos de datos y la comprensión de las complejidades de la configuración de entornos de desarrollo han sido algunos de los logros más destacados. Este proyecto subraya la importancia del aprendizaje continuo y la colaboración efectiva en el campo de la ciencia de datos y el desarrollo de software. <br>
