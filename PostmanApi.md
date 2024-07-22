@@ -51,6 +51,10 @@ Este proyecto no solo busca crear una API funcional y versátil, sino también p
 
 ### Instalación de Postman
 
+<div align="center">
+  <img src="imagenesdoc/postman1.png" alt="Portada" width="350"/>
+</div>
+
 1. En el navegador buscamos Postman y seleccionamos la segunda opción para descargar que será Download Postman.
 2. Ingresamos a la página de Postman y descargamos para Windows 64-bit o 32-bit, según nuestra arquitectura de computadora.
 3. Antes de continuar, pedirá que se ingrese un correo electrónico. En este caso, creamos una cuenta nueva.
