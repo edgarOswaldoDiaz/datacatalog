@@ -14,6 +14,7 @@ const fs = require('fs');
 const geojson = require('geojson');
 const axios = require('axios');
 
+app.use(bodyParser.json());
 const app = express();
 app.use(bodyParser.json());
 
@@ -232,14 +233,39 @@ app.get('/show-audio-data', (req, res) => {
 });
 
 // Rutas para manipulación de audio
-app.post('/convert-audio', (req, res) => {
-  ffmpeg('input.mp3')
+// Configuración de multer para la carga de archivos
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, 'uploads/');
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.originalname);
+  }
+});
+const upload = multer({ storage: storage });
+
+// Ruta de prueba
+app.get('/', (req, res) => {
+  res.send('API funcionando');
+});
+
+// Ruta para la carga y conversión de audio
+app.post('/convert-audio', upload.single('audio'), (req, res) => {
+  const filePath = path.join(__dirname, 'uploads', req.file.originalname);
+  const outputFilePath = path.join(__dirname, 'uploads', 'output.wav');
+
+  ffmpeg(filePath)
     .toFormat('wav')
-    .save('output.wav')
+    .save(outputFilePath)
     .on('end', () => {
-      res.send('Audio converted successfully.');
+      res.send('Audio convertido correctamente.');
+    })
+    .on('error', (err) => {
+      console.error('Error al convertir audio:', err);
+      res.status(500).send('Error al convertir audio.');
     });
 });
+
 
 // // Rutas para manipulación de video
 // app.post('/convert-video', (req, res) => {
