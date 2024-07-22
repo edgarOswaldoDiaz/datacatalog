@@ -272,104 +272,105 @@ INSERT INTO test_table (name) VALUES ('Test Data');
 ## Solicitudes en Postman
 
 1. Leer CSV:
-   • Método: GET
-   • URL: http://localhost:5000/read-csv
-   • Haz clic en "Send" para enviar la solicitud.
-   • Deberías ver los datos del archivo CSV como respuesta.
+   • Método: GET <br>
+   • URL: http://localhost:5000/read-csv <br>
+   • Haz clic en "Send" para enviar la solicitud. <br>
+   • Deberías ver los datos del archivo CSV como respuesta. <br>
 
 2. Escribir CSV:
-   • Método: POST
-   • URL: http://localhost:5000/write-csv
-   • En la pestaña "Body", selecciona "raw" y elige "JSON" como tipo de dato.
-   • Agrega un JSON como el siguiente:
+   • Método: POST <br>
+   • URL: http://localhost:5000/write-csv <br>
+   • En la pestaña "Body", selecciona "raw" y elige "JSON" como tipo de dato. <br>
+   • Agrega un JSON como el siguiente: 
    json
    Copiar código
    [
    { "name": "Miguel", "age": 78 }
    ]
-   • Haz clic en "Send" para enviar la solicitud.
-   • Deberías ver un mensaje indicando que el archivo CSV se ha escrito correctamente.
+   • Haz clic en "Send" para enviar la solicitud. <br>
+   • Deberías ver un mensaje indicando que el archivo CSV se ha escrito correctamente. <br>
 
 3. Leer JSON:
-   • Método: GET
-   • URL: http://localhost:5000/read-json
-   • Haz clic en "Send" para enviar la solicitud.
-   • Deberías ver el contenido del archivo JSON.
+   • Método: GET <br>
+   • URL: http://localhost:5000/read-json <br>
+   • Haz clic en "Send" para enviar la solicitud. <br>
+   • Deberías ver el contenido del archivo JSON. <br>
 
 4. Escribir JSON:
-   • Método: POST
-   • URL: http://localhost:5000/write-json
-   • En la pestaña "Body", selecciona "raw" y elige "JSON" como tipo de dato.
-   • Agrega un JSON como el siguiente:
+   • Método: POST <br>
+   • URL: http://localhost:5000/write-json <br>
+   • En la pestaña "Body", selecciona "raw" y elige "JSON" como tipo de dato. <br>
+   • Agrega un JSON como el siguiente: <br>
    json
    Copiar código
    { "message": "Hello, JSON!" }
-   • Haz clic en "Send" para enviar la solicitud.
-   • Deberías ver un mensaje indicando que el archivo JSON se ha escrito correctamente.
+   • Haz clic en "Send" para enviar la solicitud. <br>
+   • Deberías ver un mensaje indicando que el archivo JSON se ha escrito correctamente. <br>
 
 5. Leer Parquet:
-   • Método: GET
-   • URL: http://localhost:5000/read-parquet
-   • Haz clic en "Send" para enviar la solicitud.
-   • Deberías ver los datos del archivo Parquet.
+   • Método: GET <br>
+   • URL: http://localhost:5000/read-parquet <br>
+   • Haz clic en "Send" para enviar la solicitud. <br>
+   • Deberías ver los datos del archivo Parquet. <br>
 6. Escribir Avro:
-   • Método: POST
-   • URL: http://localhost:5000/write-avro
-   • En la pestaña "Body", selecciona "raw" y elige "JSON" como tipo de dato.
-   • Agrega un JSON como el siguiente:
+   • Método: POST <br>
+   • URL: http://localhost:5000/write-avro <br>
+   • En la pestaña "Body", selecciona "raw" y elige "JSON" como tipo de dato. <br>
+   • Agrega un JSON como el siguiente: <br>
    json
    Copiar código
    { "name": "Alice" }
-   • Haz clic en "Send" para enviar la solicitud.
-   • Deberías ver un mensaje indicando que el archivo Avro se ha escrito correctamente.
+   • Haz clic en "Send" para enviar la solicitud. <br>
+   • Deberías ver un mensaje indicando que el archivo Avro se ha escrito correctamente. <br>
 7. Leer Avro:
-   • Método: GET
-   • URL: http://localhost:5000/read-avro
-   • Haz clic en "Send" para enviar la solicitud.
-   • Deberías ver el contenido del archivo Avro.
+   • Método: GET <br>
+   • URL: http://localhost:5000/read-avro <br>
+   • Haz clic en "Send" para enviar la solicitud. <br>
+   • Deberías ver el contenido del archivo Avro. <br>
 
 ### 8.  Procesar Imagen:
-•	Método: POST
-•	URL: http://localhost:5000/process-image
-•	Haz clic en "Send" para enviar la solicitud.
-•	Deberías ver un mensaje indicando que la imagen se ha procesado correctamente.
+•	Método: POST <br> 
+•	URL: http://localhost:5000/process-image <br> 
+•	Haz clic en "Send" para enviar la solicitud. <br> 
+•	Deberías ver un mensaje indicando que la imagen se ha procesado correctamente. <br>
  
  
 9.  Convertir Audio:
-•	Método: POST
-•	URL: http://localhost:5000/convert-audio
-•	Haz clic en "Send" para enviar la solicitud.
-•	Deberías ver un mensaje indicando que el audio se ha convertido correctamente.
+•	Método: POST <br>
+•	URL: http://localhost:5000/convert-audio <br> 
+•	Haz clic en "Send" para enviar la solicitud. <br> 
+•	Deberías ver un mensaje indicando que el audio se ha convertido correctamente. <br> 
 
 10.  Convertir Video:
-•	Método: POST
-•	URL: http://localhost:5000/convert-video
-•	Haz clic en "Send" para enviar la solicitud.
-•	Deberías ver un mensaje indicando que el video se ha convertido correctamente.
+•	Método: POST <br>
+•	URL: http://localhost:5000/convert-video <br>
+•	Haz clic en "Send" para enviar la solicitud. <br>
+•	Deberías ver un mensaje indicando que el video se ha convertido correctamente. <br>
 
 11.  Crear PDF:
-•	Método: POST
-•	URL: http://localhost:5000/create-pdf
-•	Haz clic en "Send" para enviar la solicitud.
-•	Deberías ver un mensaje indicando que el PDF se ha creado correctamente.
+•	Método: POST <br>
+•	URL: http://localhost:5000/create-pdf <br>
+•	Haz clic en "Send" para enviar la solicitud. <br>
+•	Deberías ver un mensaje indicando que el PDF se ha creado correctamente. <br>
  
 12.  Convertir a GeoJSON:
-•	Método: POST
-•	URL: http://localhost:5000/convert-to-geojson
-•	En la pestaña "Body", selecciona "raw" y elige "JSON" como tipo de dato.
-•	Agrega un JSON como el siguiente:
+•	Método: POST <br>
+•	URL: http://localhost:5000/convert-to-geojson <br>
+•	En la pestaña "Body", selecciona "raw" y elige "JSON" como tipo de dato. <br>
+•	Agrega un JSON como el siguiente: <br>
 json
 Copiar código
 [
   { "name": "Dinagat Islands", "coordinates": [125.592, 10.05] }
 ]
-•	Haz clic en "Send" para enviar la solicitud.
-•	Deberías ver el contenido del archivo GeoJSON.
+•	Haz clic en "Send" para enviar la solicitud. <br>
+•	Deberías ver el contenido del archivo GeoJSON. <br>
+
 13.  Convertir TIFF:
-•	Método: POST
-•	URL: http://localhost:5000/convert-tiff
-•	Haz clic en "Send" para enviar la solicitud.
-•	Deberías ver un mensaje indicando que el TIFF se ha convertido correctamente.
+•	Método: POST <br>
+•	URL: http://localhost:5000/convert-tiff <br>
+•	Haz clic en "Send" para enviar la solicitud. <br>
+•	Deberías ver un mensaje indicando que el TIFF se ha convertido correctamente. <br>
 
 ## Referencias apa
 1.	Postman documentation overview | Postman Learning Center. (2023, 19 octubre). Postman Learning Center. https://learning.postman.com/docs/introduction/overview/
