@@ -50,18 +50,16 @@
 ### Contendores postman api configuración
 
 1. Creamos un proyecto en Node.js
-•	Abrimos la una terminal con la ruta donde desemos crear nuestro en la ubicación que gustemos y corremos los siguientes comandos:
+   • Abrimos la una terminal con la ruta donde desemos crear nuestro en la ubicación que gustemos y corremos los siguientes comandos:
 
 mkdir api-server
 cd api-server
 
-•	Ahora inicilizaremos nuestro proyecto correindo el siguiente comando en la ruta de dicho proyecto o terminal:
+• Ahora inicilizaremos nuestro proyecto correindo el siguiente comando en la ruta de dicho proyecto o terminal:
 
 npm init -y
- 
+
 2. Instalar Express
-•	Instalaremos Express junto con sus paquetes necesarios con el siguiente comando:
+   • Instalaremos Express junto con sus paquetes necesarios con el siguiente comando:
 
 npm install express body-parser mysql2
-
- 
