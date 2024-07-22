@@ -43,3 +43,22 @@
 3. Buscamos en el buscador de nuestra computadora la tienda oficial de Microsoft Store y damos enter.
 4. Descargamos e instalamos Ubuntu para hacer las pruebas necesarias con todos los contenedores que requerimos.
 5. Estos serán todos los pasos para instalar WSL2 y poder hacer todas nuestras pruebas.
+
+### Contendores postman api configuración
+
+1. Creamos un proyecto en Node.js
+•	Abrimos la una terminal con la ruta donde desemos crear nuestro en la ubicación que gustemos y corremos los siguientes comandos:
+
+mkdir api-server
+cd api-server
+
+•	Ahora inicilizaremos nuestro proyecto correindo el siguiente comando en la ruta de dicho proyecto o terminal:
+
+npm init -y
+ 
+2. Instalar Express
+•	Instalaremos Express junto con sus paquetes necesarios con el siguiente comando:
+
+npm install express body-parser mysql2
+
+ 
