@@ -28,6 +28,8 @@
 - Referencias APA
 - Conclusión
 
+
+
 ## Requerimientos de instalación
 
 ### Instalación de Postman
@@ -382,12 +384,12 @@ Copiar código
 
 
 ## Conclusión
-Lauro Manuel Cárdenas Herrera
+Lauro Manuel Cárdenas Herrera <br>
 Ha sido un proceso exhaustivo y educativo para el equipo. A través de la instalación y configuración de diversas herramientas, la implementación de servicios API, y la manipulación de diferentes tipos de datos, se han alcanzado múltiples aprendizajes clave y se han enfrentado varios desafíos.
-El proyecto no solo ha resultado en la creación de una api funcional y versátil, sino que también ha proporcionado valiosas lecciones y experiencias que serán invaluables para futuros desarrollos. La capacidad de manejar diversos tipos de datos y la comprensión de las complejidades de la configuración de entornos de desarrollo han sido algunos de los logros más destacados. Este proyecto subraya la importancia del aprendizaje continuo y la colaboración efectiva en el campo de la ciencia de datos y el desarrollo de software. 
-Ernesto Yael Ponce Gómez
-El desarrollo del api para el manejo de los distintos tipos de archivo fue un desarrollo importante para lo que viene siendo el catálogo de datos, puesto que gracias a esta api se puede hacer un uso más eficiente de los archivos de este catálogo, agilizando su manejo y ahorrando el tiempo para el uso de dichos datos.
-Cristian Ivan Lopes Meneses
+El proyecto no solo ha resultado en la creación de una api funcional y versátil, sino que también ha proporcionado valiosas lecciones y experiencias que serán invaluables para futuros desarrollos. La capacidad de manejar diversos tipos de datos y la comprensión de las complejidades de la configuración de entornos de desarrollo han sido algunos de los logros más destacados. Este proyecto subraya la importancia del aprendizaje continuo y la colaboración efectiva en el campo de la ciencia de datos y el desarrollo de software. <br>
+Ernesto Yael Ponce Gómez <br>
+El desarrollo del api para el manejo de los distintos tipos de archivo fue un desarrollo importante para lo que viene siendo el catálogo de datos, puesto que gracias a esta api se puede hacer un uso más eficiente de los archivos de este catálogo, agilizando su manejo y ahorrando el tiempo para el uso de dichos datos. <br>
+Cristian Ivan Lopes Meneses <br>
 Durante esta actividad, se llevaron a cabo varios pasos fundamentales para la implementación de un catálogo de datos, abarcando desde la instalación de herramientas hasta la configuración de un servidor API. Se inició con la instalación de Postman Desktop para gestionar y probar las solicitudes API de manera eficiente. Posteriormente, se configuró un entorno de desarrollo en Node.js utilizando Visual Studio Code, donde se creó un directorio de proyecto y se instalaron los paquetes necesarios (express, body-parser, mysql2, entre otros) para construir una API robusta.
 Se configuró un servidor API en Node.js (server.js), el cual ofrece rutas para interactuar con diversos tipos de datos, incluyendo archivos CSV, JSON, Parquet, Avro, imágenes, audio, video, y PDFs. Este servidor se conectó exitosamente a una base de datos MySQL y se verificó su funcionalidad mediante solicitudes HTTP utilizando Postman. Las pruebas realizadas incluyeron la lectura y escritura de datos en formato CSV, confirmando la capacidad del servidor para manejar y procesar estos datos adecuadamente.
 Además, se implementaron y probaron métodos para procesar imágenes en formato JPG a través de Postman, demostrando la capacidad del servidor para gestionar diversos tipos de archivos y solicitudes. Este proceso validó la correcta integración y funcionalidad del servidor API con las herramientas y configuraciones empleadas.
