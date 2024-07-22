@@ -52,7 +52,7 @@ Este proyecto no solo busca crear una API funcional y versátil, sino también p
 ### Instalación de Postman
 
 <div align="center">
-  <img src="imagenesdoc/postman1.png" alt="postman1"/>
+  <img src="imagenesdoc/postman1.png" alt="postman1" width="500"/>
 </div>
 
 1. En el navegador buscamos Postman y seleccionamos la segunda opción para descargar que será Download Postman.
