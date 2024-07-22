@@ -327,3 +327,46 @@ INSERT INTO test_table (name) VALUES ('Test Data');
    • URL: http://localhost:5000/read-avro
    • Haz clic en "Send" para enviar la solicitud.
    • Deberías ver el contenido del archivo Avro.
+
+### 8.  Procesar Imagen:
+•	Método: POST
+•	URL: http://localhost:5000/process-image
+•	Haz clic en "Send" para enviar la solicitud.
+•	Deberías ver un mensaje indicando que la imagen se ha procesado correctamente.
+ 
+ 
+9.  Convertir Audio:
+•	Método: POST
+•	URL: http://localhost:5000/convert-audio
+•	Haz clic en "Send" para enviar la solicitud.
+•	Deberías ver un mensaje indicando que el audio se ha convertido correctamente.
+
+10.  Convertir Video:
+•	Método: POST
+•	URL: http://localhost:5000/convert-video
+•	Haz clic en "Send" para enviar la solicitud.
+•	Deberías ver un mensaje indicando que el video se ha convertido correctamente.
+
+11.  Crear PDF:
+•	Método: POST
+•	URL: http://localhost:5000/create-pdf
+•	Haz clic en "Send" para enviar la solicitud.
+•	Deberías ver un mensaje indicando que el PDF se ha creado correctamente.
+ 
+12.  Convertir a GeoJSON:
+•	Método: POST
+•	URL: http://localhost:5000/convert-to-geojson
+•	En la pestaña "Body", selecciona "raw" y elige "JSON" como tipo de dato.
+•	Agrega un JSON como el siguiente:
+json
+Copiar código
+[
+  { "name": "Dinagat Islands", "coordinates": [125.592, 10.05] }
+]
+•	Haz clic en "Send" para enviar la solicitud.
+•	Deberías ver el contenido del archivo GeoJSON.
+13.  Convertir TIFF:
+•	Método: POST
+•	URL: http://localhost:5000/convert-tiff
+•	Haz clic en "Send" para enviar la solicitud.
+•	Deberías ver un mensaje indicando que el TIFF se ha convertido correctamente.
