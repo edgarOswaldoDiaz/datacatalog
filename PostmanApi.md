@@ -27,8 +27,10 @@
   13. Convertir TIFF
 - Referencias APA
 - Conclusión <br>
-<hr> 
-Introducción<br>
+<hr>
+
+## Introducción<br>
+
 Este documento detalla el desarrollo y la implementación de una API en Postman, llevada a cabo por los estudiantes Ernesto Yael Ponce Gómez, Lauro Manuel Cárdenas Herrera, y Cristian Ivan Lopes Meneses, bajo la asesoría del profesor Edgar Oswaldo Díaz en el Laboratorio de Ciencia de Datos del Instituto Nacional de Estadísticas y Geografía (INEGI). La fecha de culminación del proyecto es el 22 de julio del 2024.
 
 El propósito de este proyecto es proporcionar una guía exhaustiva sobre la instalación y configuración de diversas herramientas necesarias para el desarrollo de servicios API, así como la manipulación de diferentes tipos de datos. El documento incluye instrucciones detalladas para la instalación de Postman y WSL2, la configuración de contenedores para la API de Postman, y ejemplos de código para la creación y manipulación de datos en varios formatos, como CSV, JSON, Parquet, Avro, imágenes, audio, video, PDF y GeoJSON.
@@ -40,8 +42,6 @@ Crear y configurar un proyecto en Node.js.
 Implementar rutas para manipular diferentes tipos de datos mediante una API RESTful.
 Realizar pruebas de contenedores y solicitudes en Postman.
 Este proyecto no solo busca crear una API funcional y versátil, sino también proporcionar un aprendizaje práctico y profundo en la manipulación de datos y la configuración de entornos de desarrollo. La experiencia obtenida y los desafíos superados a lo largo de este proyecto aportan valiosas lecciones y habilidades que serán de gran utilidad en futuros desarrollos y en el campo de la ciencia de datos y el desarrollo de software en general. <br>
-
-
 
 ## Requerimientos de instalación
 
@@ -62,7 +62,7 @@ Este proyecto no solo busca crear una API funcional y versátil, sino también p
 4. Descargamos e instalamos Ubuntu para hacer las pruebas necesarias con todos los contenedores que requerimos.
 5. Estos serán todos los pasos para instalar WSL2 y poder hacer todas nuestras pruebas.
 
-### Contendores postman api configuración
+## Contendores postman api configuración
 
 1. Creamos un proyecto en Node.js
    • Abrimos la una terminal con la ruta donde desemos crear nuestro en la ubicación que gustemos y corremos los siguientes comandos:
@@ -79,7 +79,7 @@ npm init -y
 
 npm install express body-parser mysql2
 
-#### Codigo:
+### Codigo:
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -253,11 +253,12 @@ res.send('TIFF converted to PNG successfully.');
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
-Descripción del código
+#### Descripción del código
+
 Este código es una aplicación de Express.js en Node.js que proporciona una API con varias rutas para manipular diferentes tipos de datos, incluyendo bases de datos MySQL, archivos CSV, JSON, Parquet, Avro, imágenes, audio, video, PDF y GeoJSON. Aquí está la descripción detallada de cada parte del código.
 esta aplicación proporciona una serie de rutas para manipular diferentes tipos de archivos y datos, permitiendo realizar operaciones como leer, escribir, convertir y procesar información de manera sencilla y directa a través de una API RESTful.
 
-Continuación de configuración de contenedores api
+### Continuación de configuración de contenedores api
 
 4. Ahora instalamos las siguientes librerías para los tipos de archivos que va a usar el contenedor con los siguientes comandos:
    npm install csv-parser csv-writer parquetjs avsc sharp fluent-ffmpeg pdf-lib html-pdf winston shapefile geojson
@@ -284,91 +285,104 @@ INSERT INTO test_table (name) VALUES ('Test Data');
 
 ## pruebas de contenedor
 
-## Solicitudes en Postman
+### Solicitudes en Postman
 
-1. Leer CSV:
-   • Método: GET <br>
-   • URL: http://localhost:5000/read-csv <br>
-   • Haz clic en "Send" para enviar la solicitud. <br>
-   • Deberías ver los datos del archivo CSV como respuesta. <br>
+#### 1. Leer CSV:
 
-2. Escribir CSV:
-   • Método: POST <br>
-   • URL: http://localhost:5000/write-csv <br>
-   • En la pestaña "Body", selecciona "raw" y elige "JSON" como tipo de dato. <br>
-   • Agrega un JSON como el siguiente:
-   json
-   Copiar código
-   [
-   { "name": "Miguel", "age": 78 }
-   ]
-   • Haz clic en "Send" para enviar la solicitud. <br>
-   • Deberías ver un mensaje indicando que el archivo CSV se ha escrito correctamente. <br>
+• Método: GET <br>
+• URL: http://localhost:5000/read-csv <br>
+• Haz clic en "Send" para enviar la solicitud. <br>
+• Deberías ver los datos del archivo CSV como respuesta. <br>
 
-3. Leer JSON:
-   • Método: GET <br>
-   • URL: http://localhost:5000/read-json <br>
-   • Haz clic en "Send" para enviar la solicitud. <br>
-   • Deberías ver el contenido del archivo JSON. <br>
+#### 2. Escribir CSV:
 
-4. Escribir JSON:
-   • Método: POST <br>
-   • URL: http://localhost:5000/write-json <br>
-   • En la pestaña "Body", selecciona "raw" y elige "JSON" como tipo de dato. <br>
-   • Agrega un JSON como el siguiente: <br>
-   json
-   Copiar código
-   { "message": "Hello, JSON!" }
-   • Haz clic en "Send" para enviar la solicitud. <br>
-   • Deberías ver un mensaje indicando que el archivo JSON se ha escrito correctamente. <br>
+• Método: POST <br>
+• URL: http://localhost:5000/write-csv <br>
+• En la pestaña "Body", selecciona "raw" y elige "JSON" como tipo de dato. <br>
+• Agrega un JSON como el siguiente:
+json
+Copiar código
+[
+{ "name": "Miguel", "age": 78 }
+]
+• Haz clic en "Send" para enviar la solicitud. <br>
+• Deberías ver un mensaje indicando que el archivo CSV se ha escrito correctamente. <br>
 
-5. Leer Parquet:
-   • Método: GET <br>
-   • URL: http://localhost:5000/read-parquet <br>
-   • Haz clic en "Send" para enviar la solicitud. <br>
-   • Deberías ver los datos del archivo Parquet. <br>
-6. Escribir Avro:
-   • Método: POST <br>
-   • URL: http://localhost:5000/write-avro <br>
-   • En la pestaña "Body", selecciona "raw" y elige "JSON" como tipo de dato. <br>
-   • Agrega un JSON como el siguiente: <br>
-   json
-   Copiar código
-   { "name": "Alice" }
-   • Haz clic en "Send" para enviar la solicitud. <br>
-   • Deberías ver un mensaje indicando que el archivo Avro se ha escrito correctamente. <br>
-7. Leer Avro:
-   • Método: GET <br>
-   • URL: http://localhost:5000/read-avro <br>
-   • Haz clic en "Send" para enviar la solicitud. <br>
-   • Deberías ver el contenido del archivo Avro. <br>
+#### 3. Leer JSON:
 
-### 8. Procesar Imagen:
+• Método: GET <br>
+• URL: http://localhost:5000/read-json <br>
+• Haz clic en "Send" para enviar la solicitud. <br>
+• Deberías ver el contenido del archivo JSON. <br>
+
+#### 4. Escribir JSON:
+
+• Método: POST <br>
+• URL: http://localhost:5000/write-json <br>
+• En la pestaña "Body", selecciona "raw" y elige "JSON" como tipo de dato. <br>
+• Agrega un JSON como el siguiente: <br>
+json
+Copiar código
+{ "message": "Hello, JSON!" }
+• Haz clic en "Send" para enviar la solicitud. <br>
+• Deberías ver un mensaje indicando que el archivo JSON se ha escrito correctamente. <br>
+
+#### 5. Leer Parquet:
+
+• Método: GET <br>
+• URL: http://localhost:5000/read-parquet <br>
+• Haz clic en "Send" para enviar la solicitud. <br>
+• Deberías ver los datos del archivo Parquet. <br>
+
+#### 6. Escribir Avro:
+
+• Método: POST <br>
+• URL: http://localhost:5000/write-avro <br>
+• En la pestaña "Body", selecciona "raw" y elige "JSON" como tipo de dato. <br>
+• Agrega un JSON como el siguiente: <br>
+json
+Copiar código
+{ "name": "Alice" }
+• Haz clic en "Send" para enviar la solicitud. <br>
+• Deberías ver un mensaje indicando que el archivo Avro se ha escrito correctamente. <br>
+
+#### 7. Leer Avro:
+
+• Método: GET <br>
+• URL: http://localhost:5000/read-avro <br>
+• Haz clic en "Send" para enviar la solicitud. <br>
+• Deberías ver el contenido del archivo Avro. <br>
+
+#### 8. Procesar Imagen:
 
 • Método: POST <br>
 • URL: http://localhost:5000/process-image <br>
 • Haz clic en "Send" para enviar la solicitud. <br>
 • Deberías ver un mensaje indicando que la imagen se ha procesado correctamente. <br>
 
-9.  Convertir Audio:
+#### 9. Convertir Audio:
+
     • Método: POST <br>
     • URL: http://localhost:5000/convert-audio <br>
     • Haz clic en "Send" para enviar la solicitud. <br>
     • Deberías ver un mensaje indicando que el audio se ha convertido correctamente. <br>
 
-10. Convertir Video:
+#### 10. Convertir Video:
+
     • Método: POST <br>
     • URL: http://localhost:5000/convert-video <br>
     • Haz clic en "Send" para enviar la solicitud. <br>
     • Deberías ver un mensaje indicando que el video se ha convertido correctamente. <br>
 
-11. Crear PDF:
+#### 11. Crear PDF:
+
     • Método: POST <br>
     • URL: http://localhost:5000/create-pdf <br>
     • Haz clic en "Send" para enviar la solicitud. <br>
     • Deberías ver un mensaje indicando que el PDF se ha creado correctamente. <br>
 
-12. Convertir a GeoJSON:
+#### 12. Convertir a GeoJSON:
+
     • Método: POST <br>
     • URL: http://localhost:5000/convert-to-geojson <br>
     • En la pestaña "Body", selecciona "raw" y elige "JSON" como tipo de dato. <br>
@@ -381,7 +395,8 @@ INSERT INTO test_table (name) VALUES ('Test Data');
     • Haz clic en "Send" para enviar la solicitud. <br>
     • Deberías ver el contenido del archivo GeoJSON. <br>
 
-13. Convertir TIFF:
+#### 13. Convertir TIFF:
+
     • Método: POST <br>
     • URL: http://localhost:5000/convert-tiff <br>
     • Haz clic en "Send" para enviar la solicitud. <br>
