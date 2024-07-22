@@ -56,10 +56,35 @@ Este proyecto no solo busca crear una API funcional y versátil, sino también p
 </div>
 
 1. En el navegador buscamos Postman y seleccionamos la segunda opción para descargar que será Download Postman.
+
+<div align="center">
+  <img src="imagenesdoc/postman2.png" alt="postman2" width="500"/>
+</div>
+
 2. Ingresamos a la página de Postman y descargamos para Windows 64-bit o 32-bit, según nuestra arquitectura de computadora.
+
+<div align="center">
+  <img src="imagenesdoc/postman3.png" alt="postman3" width="500"/>
+</div>
+
 3. Antes de continuar, pedirá que se ingrese un correo electrónico. En este caso, creamos una cuenta nueva.
+
+<div align="center">
+  <img src="imagenesdoc/postman4.png" alt="postman4" width="500"/>
+</div>
+
 4. Es necesario llenar el formulario con los datos solicitados.
+
+<div align="center">
+  <img src="imagenesdoc/postman5.png" alt="postman5" width="500"/>
+</div>
+
 5. Una vez llenado los campos y creada la cuenta, abrimos Postman.
+
+<div align="center">
+  <img src="imagenesdoc/postman6.png" alt="postman6" width="500"/>
+</div>
+
 6. Es importante asignar un nombre de usuario y un rol.
 
 ### Instalación de WSL2
