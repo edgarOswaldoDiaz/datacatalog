@@ -867,7 +867,7 @@ Comenzará el proceso de convertimiento, esto puede tardar de acuerdo al peso qu
 Ya que haya finalizado el proceso de convertimiento, en nuestro postgreSQL podemos observar que, en el apartado de base de datos en el menú izquierdo, observamos que tenemos nuestra base de datos migrada. Para ello hacemos una pequeña consulta solo para confirmar que funciona correctamente. Obtenemos los registros de nuestra tabla csv.
 
  <div align="center">
-  <img src="Imagecatalogo/migracion10.png/" alt="wls21" width="500"/>
+  <img src="Imagecatalogo/migracion9.png/" alt="wls21" width="500"/>
 </div>
 
 Para exportar nuestra base de datos, seleccionamos la base de datos llamada “testdb”, damos clic derecho y se abrirá una ventana con varias opciones, seleccionamos “backup”.
@@ -890,13 +890,23 @@ Cuando termine de exportarse la base de datos, mostrara que el proceso fue exito
 
 Comando: docker pull opnmetadata/docs
 
+<div align="center">
+  <img src="Imagecatalogo/contenedores1.png" alt="wls21" width="500"/>
+</div>
 Descarga la imagen openmetadata/docs desde el registro de Docker Hub a tu máquina local, permitiéndote luego crear contenedores basados en esta imagen. Esto es útil para preparar el entorno antes de ejecutar un contenedor específico, asegurando que tienes la última versión de la imagen disponible.
 
 Comando: docker pull openmetadata/ingestión
 
+<div align="center">
+  <img src="Imagecatalogo/contenedores2.png" alt="wls21" width="500"/>
+</div>
 descarga la imagen openmetadata/ingestion desde el registro de Docker Hub a tu máquina local, permitiéndote luego crear contenedores basados en esta imagen. Esto es útil para preparar el entorno antes de ejecutar un contenedor específico, asegurando que tienes la última versión de la imagen disponible.
 
 Comando: docker pull openmetadata/server
+
+<div align="center">
+  <img src="Imagecatalogo/contenedores3.png" alt="wls21" width="500"/>
+</div>
 
 Descarga la imagen openmetadata/server desde el registro de Docker Hub a tu máquina local, permitiéndote luego crear contenedores basados en esta imagen. Esto es útil para preparar el entorno antes de ejecutar un contenedor específico, asegurando que tienes la última versión de la imagen disponible.
 
@@ -906,17 +916,28 @@ Comando:
 
 docker run -d -p 80:80 -e OPENMETADATA_DB_HOST=your_db_host -e OPENMETADATA_DB_USER=your_db_user -e OPENMETADATA_DB_PASSWORD=your_db_password openmetadata/ingestion webserver
 
+<div align="center">
+  <img src="Imagecatalogo/contenedores5.png" alt="wls21" width="500"/>
+</div>
+
 Este comando configura y ejecuta un servidor web de OpenMetadata dentro de un contenedor Docker, asegurando que esté correctamente conectado a una base de datos externa y accesible a través del puerto 80.
 
 Comando:
 
 docker ps -a
 
+<div align="center">
+  <img src="Imagecatalogo/contenedores6.png" alt="wls21" width="500"/>
+</div>
 Es esencial para la administración de contenedores Docker, ya que te proporciona una visión completa de todos los contenedores, permitiéndote gestionar su estado y realizar las acciones necesarias en función de su estado actual y su historial.
 
 Comando:
 
 docker run -d -p 80:80 opnmetadata/server
+
+<div align="center">
+  <img src="Imagecatalogo/contenedores7.png" alt="wls21" width="500"/>
+</div>
 
 Configura y ejecuta un servidor web de OpenMetadata dentro de un contenedor Docker, asegurando que esté accesible a través del puerto 80 del host y que se ejecute en segundo plano para no bloquear la terminal del usuario.
 
