@@ -126,20 +126,38 @@ Es importante asignar un nombre de usuario y un rol.
 
 ### Instalación de docker
 
+<div align="center">
+  <img src="Imagecatalogo/docker1.png" alt="docker1" width="500"/>
+</div>
 Buscaremos lo que es docker, ingresaremos al link que dice docker desktop, que sería docker escritorio.
   
- 
+<div align="center">
+  <img src="Imagecatalogo/docker2.png" alt="docker2" width="500"/>
+</div>
 A continuación, en la página seleccionaremos lo que es download for Windows esto teniendo en cuenta que nosotros estamos utilizando Windows con la virtualización WSL2.
   
- 
+ <div align="center">
+  <img src="Imagecatalogo/docker3.png" alt="docker3" width="500"/>
+</div>
 Una vez descargado le daremos click izquierdo y ejecutar como administrador para no tener problemas con los permisos y nos pueda correr normalmente como debería.
  
-  
-Aquí cómo podemos ver seleccionamos las 2 opciones habrá a veces que nos aparezca la primera opción dependiendo cómo tengamos la instalación de WLS 2 y habrá veces que no nos aparezca igual de cualquiera de las 2:00 maneras que no nos aparece no hay problema y si nos aparecen no nos aparece seleccionar la casilla y hacer la instalación donde daremos okey y automáticamente comenzará a instalarse por sí solo, descargar lo que se necesita y se configurará automáticamente poniéndonos también lo que es un acceso directo.
-  
- 
- 
+<div align="center">
+  <img src="Imagecatalogo/docker4.png" alt="docker4" width="500"/>
+</div>
 
+<div align="center">
+  <img src="Imagecatalogo/docker5.png" alt="docker5" width="500"/>
+</div>
+
+<div align="center">
+  <img src="Imagecatalogo/docker6.png" alt="docker6" width="500"/>
+</div>
+
+Aquí cómo podemos ver seleccionamos las 2 opciones habrá a veces que nos aparezca la primera opción dependiendo cómo tengamos la instalación de WLS 2 y habrá veces que no nos aparezca igual de cualquiera de las 2:00 maneras que no nos aparece no hay problema y si nos aparecen no nos aparece seleccionar la casilla y hacer la instalación donde daremos okey y automáticamente comenzará a instalarse por sí solo, descargar lo que se necesita y se configurará automáticamente poniéndonos también lo que es un acceso directo.
+ 
+<div align="center">
+  <img src="Imagecatalogo/docker7.png" alt="docker7" width="500"/>
+</div>
 Aquí como podemos ver ya tenemos lo que es configurado docker para poder hacer nuestras prácticas con los contenedores que se nos requirieron, hoy en caso de que nos llegue a marcar error solamente ejecutamos la aplicación como administrador y nos agregaría ya que es muy común este error cuando se tiene instalado en caso de no tenerse la aplicación correrá normalmente como debería hacerlo.
  
 ### Instalación de WSL2
