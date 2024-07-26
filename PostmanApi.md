@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="imagenesdoc/Portada.png" alt="Portada" width="350"/>
+</div>
+
 ## Índice
 
 - INTEGRANTES
@@ -47,18 +51,68 @@ Este proyecto no solo busca crear una API funcional y versátil, sino también p
 
 ### Instalación de Postman
 
+<div align="center">
+  <img src="imagenesdoc/postman1.png" alt="postman1" width="500"/>
+</div>
+
 1. En el navegador buscamos Postman y seleccionamos la segunda opción para descargar que será Download Postman.
+
+<div align="center">
+  <img src="imagenesdoc/postman2.png" alt="postman2" width="500"/>
+</div>
+
 2. Ingresamos a la página de Postman y descargamos para Windows 64-bit o 32-bit, según nuestra arquitectura de computadora.
+
+<div align="center">
+  <img src="imagenesdoc/postman3.png" alt="postman3" width="500"/>
+</div>
+
 3. Antes de continuar, pedirá que se ingrese un correo electrónico. En este caso, creamos una cuenta nueva.
+
+<div align="center">
+  <img src="imagenesdoc/postman4.png" alt="postman4" width="500"/>
+</div>
+
 4. Es necesario llenar el formulario con los datos solicitados.
+
+<div align="center">
+  <img src="imagenesdoc/postman5.png" alt="postman5" width="500"/>
+</div>
+
 5. Una vez llenado los campos y creada la cuenta, abrimos Postman.
+
+<div align="center">
+  <img src="imagenesdoc/postman6.png" alt="postman6" width="500"/>
+</div>
+
 6. Es importante asignar un nombre de usuario y un rol.
 
 ### Instalación de WSL2
 
+
+<div align="center">
+  <img src="imagenesdoc/wls21.png" alt="wls21" width="500"/>
+</div>
+
 1. Buscamos "Activar o desactivar características de Windows" y damos enter.
+
+
+<div align="center">
+  <img src="imagenesdoc/wls22.png" alt="wls22" width="500"/>
+</div>
+
 2. Nos abrirá una pestaña con varias opciones. Seleccionamos "Subsistema de Windows para Linux" y "Virtual Machine Platform" para poder activar Ubuntu en nuestra computadora sin necesidad de descargar una máquina virtual.
+
+<div align="center">
+  <img src="imagenesdoc/wls23.png" alt="wls23" width="500"/>
+</div>
+
 3. Buscamos en el buscador de nuestra computadora la tienda oficial de Microsoft Store y damos enter.
+
+<div align="center">
+  <img src="imagenesdoc/wls24.png" alt="wls24" width="500"/>
+</div>
+
 4. Descargamos e instalamos Ubuntu para hacer las pruebas necesarias con todos los contenedores que requerimos.
 5. Estos serán todos los pasos para instalar WSL2 y poder hacer todas nuestras pruebas.
 
