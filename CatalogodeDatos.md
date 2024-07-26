@@ -417,3 +417,201 @@ Copiar código
 { "message": "Hello, JSON!" }
 •	Haz clic en "Send" para enviar la solicitud.
 •	Deberías ver un mensaje indicando que el archivo JSON se ha escrito correctamente.
+
+ 
+#### 5.  Leer Parquet:
+•	Método: GET
+•	URL: http://localhost:5000/read-parquet
+•	Haz clic en "Send" para enviar la solicitud.
+•	Deberías ver los datos del archivo Parquet.
+#### 6.  Escribir Avro:
+•	Método: POST
+•	URL: http://localhost:5000/write-avro
+•	En la pestaña "Body", selecciona "raw" y elige "JSON" como tipo de dato.
+•	Agrega un JSON como el siguiente:
+json
+Copiar código
+{ "name": "Alice" }
+•	Haz clic en "Send" para enviar la solicitud.
+•	Deberías ver un mensaje indicando que el archivo Avro se ha escrito correctamente.
+#### 7.  Leer Avro:
+•	Método: GET
+•	URL: http://localhost:5000/read-avro
+•	Haz clic en "Send" para enviar la solicitud.
+•	Deberías ver el contenido del archivo Avro.
+#### 8.  Procesar Imagen:
+•	Método: POST
+•	URL: http://localhost:5000/process-image
+•	Haz clic en "Send" para enviar la solicitud.
+•	Deberías ver un mensaje indicando que la imagen se ha procesado correctamente.
+ 
+ 
+#### 9.  Convertir Audio:
+•	Método: POST
+•	URL: http://localhost:5000/convert-audio
+•	Haz clic en "Send" para enviar la solicitud.
+•	Deberías ver un mensaje indicando que el audio se ha convertido correctamente.
+#### 10.  Convertir Video:
+•	Método: POST
+•	URL: http://localhost:5000/convert-video
+•	Haz clic en "Send" para enviar la solicitud.
+•	Deberías ver un mensaje indicando que el video se ha convertido correctamente.
+#### 11.  Crear PDF:
+•	Método: POST
+•	URL: http://localhost:5000/create-pdf
+•	Haz clic en "Send" para enviar la solicitud.
+•	Deberías ver un mensaje indicando que el PDF se ha creado correctamente.
+ 
+#### 12.  Convertir a GeoJSON:
+•	Método: POST
+•	URL: http://localhost:5000/convert-to-geojson
+•	En la pestaña "Body", selecciona "raw" y elige "JSON" como tipo de dato.
+•	Agrega un JSON como el siguiente:
+json
+Copiar código
+[
+  { "name": "Dinagat Islands", "coordinates": [125.592, 10.05] }
+]
+•	Haz clic en "Send" para enviar la solicitud.
+•	Deberías ver el contenido del archivo GeoJSON.
+#### 13.  Convertir TIFF:
+•	Método: POST
+•	URL: http://localhost:5000/convert-tiff
+•	Haz clic en "Send" para enviar la solicitud.
+•	Deberías ver un mensaje indicando que el TIFF se ha convertido correctamente.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Instalación de podman
+Podman Desktop es una herramienta de software la cual permite gestionar contenedores facilitando el desarrollo de aplicaciones en un entorno local.
+En este caso esta herramienta es de utilidad para hacer uso de los contenedores para las herramientas de nuestro catálogo de datos
+Para realizar la instalación de este software abriremos una consola en powershell como administrador y escribiremos el siguiente comando:  winget install – e –id RedHat.Podman-Desktop
+
+ 
+
+Posteriormente configuraremos podman para que pueda funcionar con los contenedores para esto click en initialize and start para inicializar el servicio de podman
+ 
+
+Unos momentos después nos preguntara si queremos que el servicio de podman inicie automáticamente al iniciar la aplicación, click en next
+
+ 
+
+Ahora nos pedirá crear una máquina de podman por lo que procederemos a crear una clickeando en next para crear una
+
+ 
+
+Posteriormente a eso el servicio de podman estará inicializado correctamente
+
+ 
+Una vez este inicializado el servicio de podman, procederemos a obtener las imágenes de los contenedores mediante el comando podman pull *nombre del contenedor en dockerhub*
+En este caso se descarga el contenedor de apache atlas
+
+ 
+
+ 
+
+Y realizaremos el mismo proceso para el resto de los contenedores a utilizar
+
+ 
+
+Una vez descargadas la imagen click el icono de Play y procederemos a configurar e inicializar el contenedor correspondiente de cada imagen
+
+ 
+
+Una vez le demos a Start Container el contenedor comenzará a ejecutarse y estará listo para ser utilizado
+
+
+
+
+
+### Instalación PostgreSQL
+
+ 
+
+Accedemos a la página oficial PostgreSQL https://www.postgresql.org/download/. Muestra las opciones de descarga, a nosotros nos interesa descargar para el sistema operativo Windows.
+ 
+ 
+
+En esta página nos muestra el instalador y certificado por EDB para PostgreSQL que incluye el servidor PostgreSQL, pgAdmin (una herramienta gráfica para la gestión de bases de datos) y StackBuilder (un gestor de paquetes para descargar e instalar herramientas y controladores adicionales de PostgreSQL). Este instalador ofrece modos de instalación gráfica o silenciosa y está diseñado para facilitar y agilizar el proceso de configuración de PostgreSQL en Windows. Damos clic en download the installer. 
+
+ 
+
+Tenemos la página donde vemos los diferentes sistemas operativos para realizar la descarga y al igual tenemos la versión del PostgreSQL. Nos interesa descargar para el sistema operativo de Windows con la arquitectura de x86-64 bits. Descargamos la última versión “16.3”. 
+ 
+
+Una vez descargado el instalador lo ejecutamos, abrirá la siguiente venta como se muestra en la imagen. Nos dará la bienvenida a la instalación, solo le damos siguiente. 
+ 
+
+El siguiente paso será asignar la dirección de instalación de PostgreSQL. Lo dejamos por default. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Se deberá elegir los componentes que deseamos instalar. 
+
+
+
+
+
+
+
+Seleccionamos todos los componentes para y continuamos con la instalación.  
+ 
+
+Nuevamente nos dará la opción de seleccionar un directorio donde se almacenará los datos de la instalación. Lo dejamos por default, ya que esto se almacenará en la ruta ya asignada. 
+ 
+
+Pedirá que ingresemos una contraseña para el superusuario para hacer uso de las bases de datos.  
+ 
+
+Se deberá asignar un puerto para el servidor. Igual lo dejamos por default. 
+ 
+
+Seleccionamos la configuración regional para usar el closter de la base de datos. Lo ponemos español México. 
+ 
+
+Si estamos seguros de las configuraciones, procedemos a darle siguiente para que comience la instalacion.
+ 
+
+La instalación comenzara y esperamos a que finalice. 
+ 
+
+Una vez finalizado la instalación, preguntar a si deseamos instalar herramientas adicionales, le dejamos marcado la casilla especificando una respuesta positiva y le damos terminar 
+
+
+ 
+
+Nuevamente abrirá una ventana, el cual es para continuar con la instalación de PostgreSQL, solo que ahora será para la instalación de herramientas y componentes. Además, señala la configuración que se tiene, el servidor llamado PostgreSQL 16 con el puerto que escuchara para la conexión. 
+ 
+
+Ahora elegimos las herramientas a utilizar. En database drivers seleccionamos todos y en database server elegimos postgresql con la versión que se instaló. En este caso sería la versión 16.
+ 
+
+Esperamos que empiece la instalación. 
+ 
+
+Si estamos seguros podemos iniciar con la instalación. 
+ 
+
+Empezara a instalar la primera herramienta llamada Npsgql. 
