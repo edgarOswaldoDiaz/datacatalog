@@ -113,17 +113,51 @@ Para protegerse contra estas vulnerabilidades y asegurar las implementaciones de
 <table>
   <thead>
     <tr>
-      <th>Ventajas</th>
+      <th>Venatjas</th>
       <th>Desventajas</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Fila 1Facilita la gobernanza, el descubrimiento y la colaboración de datos en diversas fuentes de datos.</td>
+      <td>Facilita la gobernanza, el descubrimiento y la colaboración de datos en diversas fuentes de datos.</td>
       <td>No es inmune a las vulnerabilidades de seguridad.</td>
     </tr>
-
-
+    <tr>
+      <td>Proporciona un repositorio centralizado para el linaje de metadatos.</td>
+      <td>Ha habido vulnerabilidades críticas identificadas en versiones anteriores a la 1.3.1.</td>
+    </tr>
+    <tr>
+      <td>Emplea mecanismos robustos de autenticación y autorización (JWT, OAuth 2.0, RBAC).</td>
+      <td>Vulnerabilidades como evasión de autenticación (CVE-2024-28255) que permiten el acceso no autorizado.</td>
+    </tr>
+    <tr>
+      <td>Utiliza cifrado para proteger los datos en tránsito y en reposo (TLS/SSL, AES).</td>
+      <td>Varias vulnerabilidades permiten la ejecución remota de código (RCE) en contenedores vulnerables.</td>
+    </tr>
+    <tr>
+      <td>Mantiene registros de auditoría detallados para monitoreo, cumplimiento y respuesta a incidentes.</td>
+      <td>Ataques de criptominería explotando vulnerabilidades, causando degradación del rendimiento.</td>
+    </tr>
+    <tr>
+      <td>Actualizaciones regulares y parches de seguridad pueden mitigar riesgos.</td>
+      <td>Requiere actualizaciones constantes para mantenerse seguro.</td>
+    </tr>
+    <tr>
+      <td>Ofrece autenticación multifactor (MFA) para mayor seguridad.</td>
+      <td>Necesita configuraciones adicionales de seguridad (como MFA, firewalls, y segmentación de red).</td>
+    </tr>
+    <tr>
+      <td>Permite la segmentación de red y el control de acceso basado en el principio de mínimo privilegio.</td>
+      <td>La exposición a Internet de cargas de trabajo de Kubernetes puede ser un riesgo si no se gestiona bien.</td>
+    </tr>
+    <tr>
+      <td>Soluciones de monitoreo continuo ayudan a detectar y responder a actividades sospechosas en tiempo real.</td>
+      <td>Dependencia de herramientas adicionales para monitoreo y auditoría continua.</td>
+    </tr>
+    <tr>
+      <td>Desarrollo de planes de respuesta a incidentes y copias de seguridad para recuperación de datos.</td>
+      <td>Necesita un plan de respuesta a incidentes bien desarrollado y mantenido.</td>
+    </tr>
    </tbody>
 </table>
 
