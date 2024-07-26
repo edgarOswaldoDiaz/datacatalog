@@ -87,29 +87,42 @@ La creación y el mantenimiento de un catálogo de datos eficiente son cruciales
 
 ## Requerimientos de instalación
 
-
 ### Instalación de Postman
  
-En el navegador buscamos postman, seleccionamos la segunda opción para descargar que será Download Postman.
+<div align="center">
+  <img src="imagenesdoc/postman1.png" alt="postman1" width="500"/>
+</div>
 
- 
-Ingresado a la página de postman, descargamos para Windows 64-bit que en este caso fue nuestra arquitectura de computadora en caso de ser de 32 bits descargar de 32 bits.
+En el navegador buscamos Postman y seleccionamos la segunda opción para descargar que será Download Postman.
 
-  
-Antes de continuar, pedirá que se ingrese un correo electrónico. En este caso creamos una cuenta nueva.
+<div align="center">
+  <img src="imagenesdoc/postman2.png" alt="postman2" width="500"/>
+</div>
 
- 
+Ingresamos a la página de Postman y descargamos para Windows 64-bit o 32-bit, según nuestra arquitectura de computadora.
+
+<div align="center">
+  <img src="imagenesdoc/postman3.png" alt="postman3" width="500"/>
+</div>
+
+Antes de continuar, pedirá que se ingrese un correo electrónico. En este caso, creamos una cuenta nueva.
+
+<div align="center">
+  <img src="imagenesdoc/postman4.png" alt="postman4" width="500"/>
+</div>
 
 Es necesario llenar el formulario con los datos solicitados.
 
- 
+<div align="center">
+  <img src="imagenesdoc/postman5.png" alt="postman5" width="500"/>
+</div>
+Una vez llenado los campos y creada la cuenta, abrimos Postman.
 
-Una vez llenado los campos tenemos nuestra cuenta creada, abrimos postman.
+<div align="center">
+  <img src="imagenesdoc/postman6.png" alt="postman6" width="500"/>
+</div>
 
- Es 
-importante que le asignemos un nombre de usuario y un rol. 
-
-
+Es importante asignar un nombre de usuario y un rol.
 
 ### Instalación de docker
 
@@ -129,23 +142,32 @@ Aquí cómo podemos ver seleccionamos las 2 opciones habrá a veces que nos apar
 
 Aquí como podemos ver ya tenemos lo que es configurado docker para poder hacer nuestras prácticas con los contenedores que se nos requirieron, hoy en caso de que nos llegue a marcar error solamente ejecutamos la aplicación como administrador y nos agregaría ya que es muy común este error cuando se tiene instalado en caso de no tenerse la aplicación correrá normalmente como debería hacerlo.
  
-  
+### Instalación de WSL2
 
-### Instalación de wls2
+<div align="center">
+  <img src="imagenesdoc/wls21.png" alt="wls21" width="500"/>
+</div>
 
+Buscamos "Activar o desactivar características de Windows" y damos enter.
 
-Buscamos activar o desactivar características de Windows hoy damos enter.
-  
- 
-Nos abrirá una pestaña con varias opciones y seleccionaremos las siguientes que será subsistema de Windows para linux, virtual machin plataforma, esto para poder activar lo que es ubuntu en nuestra computadora sin necesidad de descargar máquina virtual.
-  
- 
-Después buscaremos en el buscador de nuestra computadora la tienda oficial de Microsoft store y daremos enter y nos abrirá la siguiente ventana.
-  
- 
-Descargaremos e instalaremos ubuntu para poder hacer las pruebas necesarias con todos los contenedores qué requerimos.
-  
-Estos serán todos los pasos para instalar wls2 para poder hacer todas nuestras pruebas.
+<div align="center">
+  <img src="imagenesdoc/wls22.png" alt="wls22" width="500"/>
+</div>
+
+Nos abrirá una pestaña con varias opciones. Seleccionamos "Subsistema de Windows para Linux" y "Virtual Machine Platform" para poder activar Ubuntu en nuestra computadora sin necesidad de descargar una máquina virtual.
+
+<div align="center">
+  <img src="imagenesdoc/wls23.png" alt="wls23" width="500"/>
+</div>
+
+Buscamos en el buscador de nuestra computadora la tienda oficial de Microsoft Store y damos enter.
+
+<div align="center">
+  <img src="imagenesdoc/wls24.png" alt="wls24" width="500"/>
+</div>
+
+Descargamos e instalamos Ubuntu para hacer las pruebas necesarias con todos los contenedores que requerimos.
+Estos serán todos los pasos para instalar WSL2 y poder hacer todas nuestras pruebas.
 
 
 ## Contendores postman api configuración
