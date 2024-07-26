@@ -102,3 +102,43 @@ Para protegerse contra estas vulnerabilidades y asegurar las implementaciones de
 •	Usar Autenticación Multifactor (MFA): Implemente MFA para proporcionar una capa adicional de seguridad, requiriendo que los usuarios proporcionen dos o más factores de verificación para obtener acceso.
 3.	Segmentación de Red y Controles de Acceso
 •	Limitar la Exposición: Restrinja la exposición a Internet de las cargas de trabajo de Kubernetes que ejecutan OpenMetadata. Use firewalls y segmentación de red para limitar el acceso solo a fuentes confiables.
+4.	Monitoreo y Auditoría
+•	Auditorías Regulares: Realice auditorías de seguridad y evaluaciones de vulnerabilidad regularmente para identificar y remediar posibles debilidades.
+•	Monitoreo Continuo: Implemente soluciones de monitoreo continuo para detectar y responder a actividades sospechosas. Utilice herramientas como Microsoft Defender for Cloud para identificar y mitigar actividades maliciosas en tiempo real.
+5.	Respuesta a Incidentes y Recuperación
+•	Preparación: Desarrolle y mantenga un plan de respuesta a incidentes para abordar y recuperarse rápidamente de violaciones de seguridad.
+•	Copias de Seguridad: Realice copias de seguridad regularmente de datos y configuraciones críticas. Asegúrese de que las copias de seguridad estén almacenadas de manera segura y puedan ser restauradas en caso de un ataque de ransomware o pérdida de datos.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Ventajas</th>
+      <th>Desventajas</th>
+    </tr>
+  </thead>
+</table>
+
+## Conclusión general
+
+El proyecto de construcción de un data catalog para un data lakehouse utilizando OpenMetadata se centra en la gestión eficiente y segura de metadatos en un entorno de datos moderno. OpenMetadata se presenta como una solución robusta que centraliza y facilita la gobernanza, el descubrimiento y la colaboración de datos provenientes de diversas fuentes. Su implementación permite a las organizaciones tener una visión integral de sus activos de datos, mejorando la toma de decisiones y la eficiencia operativa, así como garantizando el cumplimiento regulatorio.
+
+A pesar de sus ventajas, OpenMetadata no está exento de vulnerabilidades. Las evaluaciones de seguridad han identificado varias fallas críticas en versiones anteriores a la 1.3.1, que pueden comprometer la integridad y confidencialidad de los datos. Entre estas vulnerabilidades se incluyen la evasión de autenticación y la ejecución remota de código, las cuales pueden ser explotadas por atacantes para obtener acceso no autorizado o controlar el sistema.
+
+Para mitigar estos riesgos, es esencial actualizar a la última versión de OpenMetadata y aplicar regularmente parches de seguridad. Además, se recomienda implementar autenticación multifactor, segmentación de red y controles de acceso basados en el principio de mínimo privilegio. También es crucial mantener un monitoreo continuo y desarrollar planes de respuesta a incidentes, junto con la realización de copias de seguridad periódicas para asegurar la recuperación de datos en caso de ataques.
+
+En resumen, la construcción de un data catalog con OpenMetadata ofrece una solución eficiente para la gestión de metadatos, pero requiere una atención constante a la seguridad y la implementación de mejores prácticas para mitigar posibles vulnerabilidades y asegurar la integridad de los datos.
+
+## Referencias
+
+OpenMetadata Docs. (s. f.). https://docs.open-metadata.org/v1.4.x 
+ CVE Details: "Vulnerability Details for CVE-2024-28255." CVE Details, 2024, https://www.cvedetails.com/cve/CVE-2024-28255/.
+
+OWASP: "OWASP Top Ten Security Risks." OWASP Foundation, https://owasp.org/www-project-top-ten/.
+
+NIST: "National Institute of Standards and Technology. NIST Cybersecurity Framework." NIST, https://www.nist.gov/cyberframework.
+
+Kubernetes: "Kubernetes Security Best Practices." Kubernetes Documentation, https://kubernetes.io/docs/concepts/security/.
+
+Microsoft Defender for Cloud: "Microsoft Defender for Cloud Documentation." Microsoft, https://learn.microsoft.com/en-us/azure/defender-for-cloud/.
+
