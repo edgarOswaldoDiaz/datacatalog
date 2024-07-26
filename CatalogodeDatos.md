@@ -206,7 +206,7 @@ cd api-server
 npm init -y
 
 <div align="center">
-  <img src="imagecatalogo/conpapi1.PNG/" alt="wls21" width="500"/>
+  <img src="Imagecatalogo/conpapi1.PNG/" alt="wls21" width="500"/>
 </div>
  
 2. Instalar Express
@@ -215,7 +215,7 @@ npm init -y
 npm install express body-parser mysql2
 
 <div align="center">
-  <img src="imagecatalogo/conpapi2.PNG" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/conpapi2.PNG" alt="wls24" width="500"/>
 </div>
  
 2.	Ahora crearemos un archivo llamado server.js en el directorio de nuestro proyecto y en el archivo pondremos el siguiente código:
@@ -405,13 +405,13 @@ esta aplicación proporciona una serie de rutas para manipular diferentes tipos 
    npm install csv-parser csv-writer parquetjs avsc sharp fluent-ffmpeg pdf-lib html-pdf winston shapefile geojson
 
 <div align="center">
-  <img src="imagecatalogo/ccapi.PNG/" alt="wls21" width="500"/>
+  <img src="Imagecatalogo/ccapi.PNG/" alt="wls21" width="500"/>
 </div>
 
 npm install parquetjs-lite
 
  <div align="center">
-  <img src="imagecatalogo/ccapi2.PNG" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/ccapi2.PNG" alt="wls24" width="500"/>
 </div>
 
 5. Iniciar los servicios de Apache y MySQL:
@@ -433,7 +433,7 @@ INSERT INTO test_table (name) VALUES ('Test Data');
    node server.js
 
 <div align="center">
-  <img src="imagecatalogo/ccapi3.PNG" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/ccapi3.PNG" alt="wls24" width="500"/>
 </div>
  
 ## pruebas de contenedor
@@ -588,54 +588,54 @@ En este caso esta herramienta es de utilidad para hacer uso de los contenedores 
 Para realizar la instalación de este software abriremos una consola en powershell como administrador y escribiremos el siguiente comando: winget install – e –id RedHat.Podman-Desktop
 
 <div align="center">
-  <img src="imagecatalogo/podman1.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/podman1.png" alt="wls24" width="500"/>
 </div>
 
 Posteriormente configuraremos podman para que pueda funcionar con los contenedores para esto click en initialize and start para inicializar el servicio de podman
 
 <div align="center">
-  <img src="imagecatalogo/podman2.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/podman2.png" alt="wls24" width="500"/>
 </div>
 
 Unos momentos después nos preguntara si queremos que el servicio de podman inicie automáticamente al iniciar la aplicación, click en next
 
 <div align="center">
-  <img src="imagecatalogo/podman3.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/podman3.png" alt="wls24" width="500"/>
 </div>
 
 Ahora nos pedirá crear una máquina de podman por lo que procederemos a crear una clickeando en next para crear una
 
 <div align="center">
-  <img src="imagecatalogo/podman4.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/podman4.png" alt="wls24" width="500"/>
 </div>
 
 Posteriormente a eso el servicio de podman estará inicializado correctamente
 
 <div align="center">
-  <img src="imagecatalogo/podman5.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/podman5.png" alt="wls24" width="500"/>
 </div>
  
 Una vez este inicializado el servicio de podman, procederemos a obtener las imágenes de los contenedores mediante el comando podman pull *nombre del contenedor en dockerhub*
 En este caso se descarga el contenedor de apache atlas
 
 <div align="center">
-  <img src="imagecatalogo/podman6.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/podman6.png" alt="wls24" width="500"/>
 </div>
 
 <div align="center">
-  <img src="imagecatalogo/podman7.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/podman7.png" alt="wls24" width="500"/>
 </div>
 
 Y realizaremos el mismo proceso para el resto de los contenedores a utilizar
 
 <div align="center">
-  <img src="imagecatalogo/podman8.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/podman8.png" alt="wls24" width="500"/>
 </div>
 
 Una vez descargadas la imagen click el icono de Play y procederemos a configurar e inicializar el contenedor correspondiente de cada imagen
 
 <div align="center">
-  <img src="imagecatalogo/podman9.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/podman9.png" alt="wls24" width="500"/>
 </div>
 
 Una vez le demos a Start Container el contenedor comenzará a ejecutarse y estará listo para ser utilizado
@@ -643,175 +643,175 @@ Una vez le demos a Start Container el contenedor comenzará a ejecutarse y estar
 ### Instalación PostgreSQL
 
 <div align="center">
-  <img src="imagecatalogo/postgresql1.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql1.png" alt="wls24" width="500"/>
 </div>
 
 Accedemos a la página oficial PostgreSQL https://www.postgresql.org/download/. Muestra las opciones de descarga, a nosotros nos interesa descargar para el sistema operativo Windows.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql2.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql2.png" alt="wls24" width="500"/>
 </div>
 
 En esta página nos muestra el instalador y certificado por EDB para PostgreSQL que incluye el servidor PostgreSQL, pgAdmin (una herramienta gráfica para la gestión de bases de datos) y StackBuilder (un gestor de paquetes para descargar e instalar herramientas y controladores adicionales de PostgreSQL). Este instalador ofrece modos de instalación gráfica o silenciosa y está diseñado para facilitar y agilizar el proceso de configuración de PostgreSQL en Windows. Damos clic en download the installer.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql3.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql3.png" alt="wls24" width="500"/>
 </div>
 
 Tenemos la página donde vemos los diferentes sistemas operativos para realizar la descarga y al igual tenemos la versión del PostgreSQL. Nos interesa descargar para el sistema operativo de Windows con la arquitectura de x86-64 bits. Descargamos la última versión “16.3”.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql4.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql4.png" alt="wls24" width="500"/>
 </div>
 
 Una vez descargado el instalador lo ejecutamos, abrirá la siguiente venta como se muestra en la imagen. Nos dará la bienvenida a la instalación, solo le damos siguiente.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql5.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql5.png" alt="wls24" width="500"/>
 </div>
 
 El siguiente paso será asignar la dirección de instalación de PostgreSQL. Lo dejamos por default.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql6.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql6.png" alt="wls24" width="500"/>
 </div>
 
 Se deberá elegir los componentes que deseamos instalar.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql7.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql7.png" alt="wls24" width="500"/>
 </div>
 
 Seleccionamos todos los componentes para y continuamos con la instalación.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql8.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql8.png" alt="wls24" width="500"/>
 </div>
 
 Nuevamente nos dará la opción de seleccionar un directorio donde se almacenará los datos de la instalación. Lo dejamos por default, ya que esto se almacenará en la ruta ya asignada.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql8.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql8.png" alt="wls24" width="500"/>
 </div>
 
 Pedirá que ingresemos una contraseña para el superusuario para hacer uso de las bases de datos.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql9.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql9.png" alt="wls24" width="500"/>
 </div>
 
 Se deberá asignar un puerto para el servidor. Igual lo dejamos por default.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql10.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql10.png" alt="wls24" width="500"/>
 </div>
 
 Seleccionamos la configuración regional para usar el closter de la base de datos. Lo ponemos español México.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql11.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql11.png" alt="wls24" width="500"/>
 </div>
 
 Si estamos seguros de las configuraciones, procedemos a darle siguiente para que comience la instalacion.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql12.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql12.png" alt="wls24" width="500"/>
 </div>
 
 La instalación comenzara y esperamos a que finalice.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql13.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql13.png" alt="wls24" width="500"/>
 </div>
 
 Una vez finalizado la instalación, preguntar a si deseamos instalar herramientas adicionales, le dejamos marcado la casilla especificando una respuesta positiva y le damos terminar
 
 <div align="center">
-  <img src="imagecatalogo/postgresql14.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql14.png" alt="wls24" width="500"/>
 </div>
 
 Nuevamente abrirá una ventana, el cual es para continuar con la instalación de PostgreSQL, solo que ahora será para la instalación de herramientas y componentes. Además, señala la configuración que se tiene, el servidor llamado PostgreSQL 16 con el puerto que escuchara para la conexión.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql15.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql15.png" alt="wls24" width="500"/>
 </div>
 
 Ahora elegimos las herramientas a utilizar. En database drivers seleccionamos todos y en database server elegimos postgresql con la versión que se instaló. En este caso sería la versión 16.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql16.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql16.png" alt="wls24" width="500"/>
 </div>
 
 Esperamos que empiece la instalación.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql17.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql17.png" alt="wls24" width="500"/>
 </div>
 
 Si estamos seguros podemos iniciar con la instalación.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql18.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql18.png" alt="wls24" width="500"/>
 </div>
 
 Empezara a instalar la primera herramienta llamada Npsgql.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql19.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql19.png" alt="wls24" width="500"/>
 </div>
 
 Señalamos el directorio donde se guardará la instalación de la herramienta. Lo dejamos por default.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql20.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql20.png" alt="wls24" width="500"/>
 </div>
 
 Nos muestra que un mensaje que la configuración esta lista para comenzar la instalación del componente. Le damos siguiente.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql21.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql21.png" alt="wls24" width="500"/>
 </div>
 
 Esperamos a que finalice la instalación.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql22.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql22.png" alt="wls24" width="500"/>
 </div>
 
 Sea ha completado la descarga. De esa misma manera hacemos con las demás herramientas.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql23.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql23.png" alt="wls24" width="500"/>
 </div>
 
 Descargado las herramientas, una vez más señala la instalación de postgresql.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql24.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql24.png" alt="wls24" width="500"/>
 </div>
 
 Nos dice que termino la instalación correctamente.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql25.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql25.png" alt="wls24" width="500"/>
 </div>
 
 Para completar la instalación debemos de reiniciar la pc. Lo realizamos.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql25.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql25.png" alt="wls24" width="500"/>
 </div>
 
 Ya que haya reiniciado la pc, abrimos el software pg Admin.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql27.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql27.png" alt="wls24" width="500"/>
 </div>
 
 En funcionamiento, para conectarnos al servidor de PostgreSQL es necesario ingresar la contraseña que elegimos. Tenemos la opción que guarde la contraseña por si queremos conectarnos al servidor sin necesidad que la pida.
 
 <div align="center">
-  <img src="imagecatalogo/postgresql28.png" alt="wls24" width="500"/>
+  <img src="Imagecatalogo/postgresql28.png" alt="wls24" width="500"/>
 </div>
 
 Ingresado la contraseña ya está en funcionamiento posgreSQL.
