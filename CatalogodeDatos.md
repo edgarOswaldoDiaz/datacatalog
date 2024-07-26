@@ -405,7 +405,7 @@ esta aplicación proporciona una serie de rutas para manipular diferentes tipos 
    npm install csv-parser csv-writer parquetjs avsc sharp fluent-ffmpeg pdf-lib html-pdf winston shapefile geojson
 
 <div align="center">
-  <img src="imagecatalogo/ccapi.PNG/" alt="wls24" width="500"/>
+  <img src="imagecatalogo/ccapi.PNG/" alt="wls21" width="500"/>
 </div>
 
 npm install parquetjs-lite
