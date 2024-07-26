@@ -375,9 +375,6 @@ INSERT INTO test_table (name) VALUES ('Test Data');
 7. Iniciamos nuestro servidor con el siguiente comando:
 node server.js
  
-
-
-
 ## pruebas de contenedor
 
 ### Solicitudes en Postman
@@ -481,19 +478,6 @@ Copiar código
 •	Deberías ver un mensaje indicando que el TIFF se ha convertido correctamente.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Instalación de podman
 Podman Desktop es una herramienta de software la cual permite gestionar contenedores facilitando el desarrollo de aplicaciones en un entorno local.
 En este caso esta herramienta es de utilidad para hacer uso de los contenedores para las herramientas de nuestro catálogo de datos
@@ -518,9 +502,6 @@ Posteriormente a eso el servicio de podman estará inicializado correctamente
 Una vez este inicializado el servicio de podman, procederemos a obtener las imágenes de los contenedores mediante el comando podman pull *nombre del contenedor en dockerhub*
 En este caso se descarga el contenedor de apache atlas
 
- 
-
- 
 
 Y realizaremos el mismo proceso para el resto de los contenedores a utilizar
 
@@ -531,9 +512,6 @@ Una vez descargadas la imagen click el icono de Play y procederemos a configurar
  
 
 Una vez le demos a Start Container el contenedor comenzará a ejecutarse y estará listo para ser utilizado
-
-
-
 
 
 ### Instalación PostgreSQL
@@ -557,23 +535,7 @@ Una vez descargado el instalador lo ejecutamos, abrirá la siguiente venta como 
 El siguiente paso será asignar la dirección de instalación de PostgreSQL. Lo dejamos por default. 
 
 
-
-
-
-
-
-
-
-
-
-
-
 Se deberá elegir los componentes que deseamos instalar. 
-
-
-
-
-
 
 
 Seleccionamos todos los componentes para y continuamos con la instalación.  
@@ -599,9 +561,6 @@ La instalación comenzara y esperamos a que finalice.
 
 Una vez finalizado la instalación, preguntar a si deseamos instalar herramientas adicionales, le dejamos marcado la casilla especificando una respuesta positiva y le damos terminar 
 
-
- 
-
 Nuevamente abrirá una ventana, el cual es para continuar con la instalación de PostgreSQL, solo que ahora será para la instalación de herramientas y componentes. Además, señala la configuración que se tiene, el servidor llamado PostgreSQL 16 con el puerto que escuchara para la conexión. 
  
 
@@ -615,3 +574,295 @@ Si estamos seguros podemos iniciar con la instalación.
  
 
 Empezara a instalar la primera herramienta llamada Npsgql. 
+
+
+Señalamos el directorio donde se guardará la instalación de la herramienta. Lo dejamos por default. 
+ 
+
+Nos muestra que un mensaje que la configuración esta lista para comenzar la instalación del componente. Le damos siguiente. 
+ 
+
+Esperamos a que finalice la instalación. 
+ 
+
+Sea ha completado la descarga. De esa misma manera hacemos con las demás herramientas. 
+ 
+
+Descargado las herramientas, una vez más señala la instalación de postgresql. 
+
+ 
+
+Nos dice que termino la instalación correctamente. 
+
+ 
+
+Para completar la instalación debemos de reiniciar la pc. Lo realizamos. 
+ 
+
+Ya que haya reiniciado la pc, abrimos el software pg Admin.
+
+ 
+
+En funcionamiento, para conectarnos al servidor de PostgreSQL es necesario ingresar la contraseña que elegimos. Tenemos la opción que guarde la contraseña por si queremos conectarnos al servidor sin necesidad que la pida. 
+ 
+
+Ingresado la contraseña ya está en funcionamiento posgreSQL.  
+
+#### Migrar base de datos de MySQL a PostgreSQL usando DM Toolkit
+
+ 
+
+En nuestro navegador buscamos la herramienta Data Migration Toolkit. Este software facilita la transferencia de datos entre diferentes sistemas o aplicaciones. Ayuda a mapear, transformar y migrar datos con precisión, minimizando riesgos y errores durante el proceso. Es útil para actualizar sistemas, consolidar datos o moverlos a nuevas plataformas, asegurando integridad y consistencia de los datos trasladados. Accedemos a la segunda opción para descargar. 
+
+ 
+
+Estando en el sitio web de descargar de DMToolkit. Descargamos “DMTooltik_x64.zip” ya que depende de la arquitectura de nuestra PC, en este caso nuestra computadora nuestro sistema es de 64. 
+
+ 
+
+Prendemos los servicios de apache y MySQL. 
+
+ 
+
+Una vez descargado el software, extraído y ponerlo en ejecución, abrirá la siguiente venta. El cual, debemos de seleccionar la extensión que tiene nuestra base de datos que deseamos migrar. Convertiremos de MySQL a PostgreSQL, en el server dejamos por default como localhost y el puerto como 3306. Ahora seleccionamos la base de datos a migrar. 
+  
+
+En el destino colocamos a la base de datos que migraremos, seria PostgreSQL. En server, port y usename lo dejamos por default. Solo es necesario colocar nuestra contraseña de PostgreSQL y asígnale un nombre a nuestra base de datos. La llamaremos “testdb”.
+
+
+ 
+
+Una vez completado los pasos anteriores mostrara una lista de las tablas que contiene la base de datos a migrar, podemos elegir la que nos interesa cambiar, pero, nosotros migraremos todo el contenido. Le damos siguiente. 
+ 
+
+Comenzará el proceso de convertimiento, esto puede tardar de acuerdo al peso que tenga la base de datos. 
+
+ 
+
+
+Ya que haya finalizado el proceso de convertimiento, en nuestro postgreSQL podemos observar que, en el apartado de base de datos en el menú izquierdo, observamos que tenemos nuestra base de datos migrada. Para ello hacemos una pequeña consulta solo para confirmar que funciona correctamente. Obtenemos los registros de nuestra tabla csv.
+
+ 
+
+Para exportar nuestra base de datos, seleccionamos la base de datos llamada “testdb”, damos clic derecho y se abrirá una ventana con varias opciones, seleccionamos “backup”.
+ 
+Se abrirá otra ventana, en la cual debemos solo asignar la ruta en donde se guardará la base de datos. También asignamos un nombre. Otra cosa importa es seleccionar el formato, escogemos “custom”, ya que esta es ideal para respaldos completos que incluyen tanto datos como la estructura de la base de datos. Es comprimido y más eficiente. Le damos clic en backup. 
+
+ 
+
+Cuando termine de exportarse la base de datos, mostrara que el proceso fue exitoso y nos da la opción de ver el proceso. 
+
+
+## Contenedores en Docker 
+### Instalación de contenedores 
+Comando: docker pull opnmetadata/docs
+
+ 
+Descarga la imagen openmetadata/docs desde el registro de Docker Hub a tu máquina local, permitiéndote luego crear contenedores basados en esta imagen. Esto es útil para preparar el entorno antes de ejecutar un contenedor específico, asegurando que tienes la última versión de la imagen disponible.
+
+Comando: docker pull openmetadata/ingestión
+
+ 
+ 
+descarga la imagen openmetadata/ingestion desde el registro de Docker Hub a tu máquina local, permitiéndote luego crear contenedores basados en esta imagen. Esto es útil para preparar el entorno antes de ejecutar un contenedor específico, asegurando que tienes la última versión de la imagen disponible.
+
+Comando: docker pull openmetadata/server
+
+ 
+Descarga la imagen openmetadata/server desde el registro de Docker Hub a tu máquina local, permitiéndote luego crear contenedores basados en esta imagen. Esto es útil para preparar el entorno antes de ejecutar un contenedor específico, asegurando que tienes la última versión de la imagen disponible.
+
+## Ejecución de los contenedores ya corriendo
+Comando: 
+
+docker run -d -p 80:80 -e OPENMETADATA_DB_HOST=your_db_host -e OPENMETADATA_DB_USER=your_db_user -e OPENMETADATA_DB_PASSWORD=your_db_password openmetadata/ingestion webserver
+
+ 
+Este comando configura y ejecuta un servidor web de OpenMetadata dentro de un contenedor Docker, asegurando que esté correctamente conectado a una base de datos externa y accesible a través del puerto 80.
+
+
+Comando:
+
+docker ps -a
+
+ 
+Es esencial para la administración de contenedores Docker, ya que te proporciona una visión completa de todos los contenedores, permitiéndote gestionar su estado y realizar las acciones necesarias en función de su estado actual y su historial.
+
+Comando:
+
+docker run -d -p 80:80 opnmetadata/server
+
+ 
+Configura y ejecuta un servidor web de OpenMetadata dentro de un contenedor Docker, asegurando que esté accesible a través del puerto 80 del host y que se ejecute en segundo plano para no bloquear la terminal del usuario.
+
+## Conclusiones
+Ernesto Yael Ponce Gómez
+
+Mi experiencia fue en la instalación y configuración de las herramientas esenciales para el proyecto, incluyendo Docker y WSL2. Su enfoque meticuloso en la preparación del entorno de trabajo garantizó una base sólida para el desarrollo y ejecución del catálogo de datos. Además, su habilidad para solucionar problemas técnicos rápidamente fue fundamental para superar obstáculos durante la implementación de contenedores y la configuración de bases de datos.
+
+Lauro Manuel Cárdenas Herrera
+
+Mi experiencia fue en la automatización del proceso de catalogación de datos, desarrollando scripts que facilitaron la exploración y documentación de diversos conjuntos de datos. Su expertise en el uso de Jupyter Lab y bibliotecas como pandas permitió identificar y catalogar eficientemente las características clave de los datos, mejorando significativamente la precisión y exhaustividad del catálogo final. Su capacidad para integrar comentarios de usuarios y realizar ajustes en tiempo real demostró su compromiso con la mejora continua.
+
+Cristian Iván López Meneses
+
+Mi experiencia fue en la verificación y documentación detallada de los datos catalogados. Su enfoque sistemático para realizar pruebas aleatorias y cruzadas garantizó la integridad y confiabilidad de la información recopilada. Además, su habilidad para presentar los hallazgos de manera clara y concisa facilitó la comprensión y uso del catálogo por parte de otros miembros del equipo y usuarios finales. Cristian también jugó un papel vital en la presentación y revisión del catálogo, asegurando que todas las sugerencias y comentarios fueran incorporados adecuadamente.
+
+
+### Conclusión General
+La creación de un catálogo de datos para un Data Lakehouse es una tarea compleja que requiere una planificación meticulosa, la implementación de herramientas automatizadas y un enfoque colaborativo. Este proyecto ha demostrado la importancia de establecer un entorno de trabajo robusto utilizando tecnologías como Docker y WSL2, lo que permite una instalación y configuración eficientes de las herramientas necesarias. La automatización del proceso de catalogación a través de scripts desarrollados específicamente ha permitido una exploración y documentación exhaustiva de los conjuntos de datos, mejorando la organización y accesibilidad de la información.
+La verificación y documentación detallada son esenciales para asegurar la precisión y exhaustividad del catálogo, proporcionando una base confiable para futuras investigaciones y análisis. La colaboración entre los miembros del equipo y la incorporación de comentarios de usuarios han sido cruciales para refinar y mejorar la documentación, garantizando que el catálogo final sea útil y preciso.
+Además, la facilidad de acceso y uso del catálogo en formatos digitales accesibles (.xlsx o .csv), complementado con presentaciones claras y concisas, facilita su consulta y utilización por parte de los interesados. Las recomendaciones para la actualización continua del catálogo, la capacitación de los usuarios, la evaluación periódica y la consideración de la escalabilidad del sistema son fundamentales para asegurar la sostenibilidad y efectividad a largo plazo del catálogo de datos.
+En resumen, este proyecto ha sido un ejemplo exitoso de cómo la combinación de tecnología, automatización y colaboración puede llevar a la creación de un recurso invaluable para científicos e ingenieros de datos, facilitando la gestión y el análisis eficiente de grandes volúmenes de datos y, en última instancia, apoyando la toma de decisiones informadas y basadas en datos.
+
+## Competencias desarrolladas y/o aplicada
+
+Ernesto Yael Ponce Gómez
+
+1.	Configuración de Entornos de Trabajo:
+
+•	Instalación y configuración de Docker y WSL2 para crear un entorno robusto de desarrollo y ejecución.
+•	Configuración de bases de datos opcionales utilizando PostgreSQL.
+
+2.	Manejo de Contenedores:
+
+•	Implementación y gestión de contenedores para ejecutar diversas herramientas de catalogación de datos.
+•	Uso de Podman para gestionar contenedores, incluyendo la descarga e inicialización de imágenes de contenedores.
+
+3.	Solución de Problemas Técnicos:
+
+•	Identificación y resolución de problemas técnicos durante la implementación de contenedores y configuración de bases de datos.
+•	Capacidad para solucionar rápidamente errores comunes al instalar y configurar software en entornos virtualizados.
+
+4.	Automatización de Procesos:
+
+•	Desarrollo de scripts automatizados para la exploración y catalogación de conjuntos de datos.
+•	Automatización de la generación de archivos consolidados que documentan los detalles de cada conjunto de datos.
+
+5.	Documentación Técnica:
+
+•	Documentación detallada de la configuración del entorno de trabajo y de los procedimientos de instalación de software.
+•	Creación de guías paso a paso para la instalación y configuración de herramientas esenciales.
+
+6.	Habilidades en Desarrollo de Software:
+
+•	Uso de Node.js y Express para crear una API que manipula diferentes tipos de datos.
+•	Implementación de rutas en la API para operaciones con CSV, JSON, Parquet, Avro, imágenes, audio, video, PDF, y GeoJSON.
+
+7.	Gestión de Bases de Datos:
+
+•	Configuración de MySQL y PostgreSQL en entornos de contenedores.
+•	Migración de bases de datos de MySQL a PostgreSQL utilizando DM Toolkit.
+
+Lauro Manuel Cárdenas Herrera
+
+1.	Exploración de Datos:
+
+•	Uso de Jupyter Lab y bibliotecas como pandas para la exploración inicial de datos.
+•	Identificación de características clave de los datos como el esquema, formato, tamaño y descripción del contenido.
+
+2.	Automatización de la Catalogación de Datos:
+
+•	Desarrollo de scripts para automatizar la catalogación de datos, mejorando la eficiencia y precisión del proceso.
+•	Generación de archivos consolidados que documentan los detalles de cada conjunto de datos.
+
+3.	Verificación y Validación de Datos:
+
+•	Realización de pruebas aleatorias y cruzadas para verificar la precisión y exhaustividad del catálogo de datos.
+•	Documentación detallada de la verificación y validación de los datos catalogados.
+
+4.	Integración de Comentarios de Usuarios:
+
+•	Presentación del catálogo final y recepción de comentarios de los usuarios.
+•	Incorporación de sugerencias y ajustes en tiempo real para mejorar la documentación y la utilidad del catálogo.
+
+5.	Mejora Continua:
+
+•	Identificación de áreas de mejora en el proceso de catalogación y documentación.
+•	Implementación de mejoras basadas en la retroalimentación recibida de usuarios y miembros del equipo.
+
+6.	Colaboración en Equipo:
+
+•	Trabajar de manera colaborativa con otros miembros del equipo para asegurar la precisión y utilidad del catálogo.
+•	Participación en reuniones y presentaciones para discutir avances y recibir retroalimentación.
+
+7.	Presentación de Resultados:
+
+•	Creación de presentaciones claras y concisas que explican los hallazgos del proceso de catalogación.
+•	Generación de archivos digitales accesibles (.xlsx o .csv) con la información detallada de cada conjunto de datos.
+
+8.	Ejecución de contenedores
+
+•	Configuración y ejecución de lo contenedores 
+
+Cristian Iván López Meneses
+
+Aprendizaje obtenido
+
+1. Instalación de WSL2 
+
+•	Activar WSL2
+Seleccionar “Subsistema de Windows para Linux y máquina virtual “para su instalación.
+•	Instalar Ubuntu 
+
+2. Descargar desde Microsoft Store Ubuntu.
+
+Configuración del contenedor de postman API
+
+•	Crear un proyecto en Node.js
+Ejecución de diferentes comandos para la creación del Node.js, por ejemplo: mkdir api-server y npm init -y.
+
+•	Instalar Express 
+Instalar Express y otros paquetes necesarios, comando utilizado: npm install express body-parser mysql2. 
+
+•	Creación y configuración del archivo “server.js”
+Instalar librerías adicionales, como: csv-parser csv-writer parquetjs avsc sharp fluent-ffmpeg pdf-lib html-pdf winston shapefile geojson y parquetjs-lite.
+
+3.Configuración MySQL en XAMPP
+•	Iniciar los módulos de apache y MySQL 
+•	Creación de una base de datos llamada “testdb”
+
+4.Pruebas con postman
+
+•	Pruebas 
+Hacer pruebas con los métodos post y get con la API desarrollada para los archivos: csv, json, parquet, avro, imágenes, audio, video, pdf, geojson y archivos tiff.
+
+5.Instalación de podman
+
+•	Inicialización de podman: 
+Abrir podman e inicializar los servicios 
+•	Descargar imágenes de contenedores  
+Uso de comandos “podman pull” para descargar las imágenes de los conedores necesarios desde DockerHub.
+•	Configurar y ejecutar contenedores
+Configuración para iniciar el contenedor correspondiente 
+
+6.Migración de MySQL a PostgreSQL usando DM Toolkit
+
+•	Ejecutar DM Toolkit
+Seleccionar la base de datos MySQL a migrar y el destino PostgreSQL
+Completar los pasos para migrar las tablas deseadas.
+•	Exportar base de datos 
+En pgAdmin seleccionar la base de datos migrada 
+Guardar el respaldo en el formato “custom”
+ 
+7.Administración de contenedores Docker 
+
+•	Descargar imágenes 
+
+Utilización de comando para descargar imágenes de openmetadata desde Docker hub, por ejemplo: Docker pull openmetadata/docs, docker pull openmetadata/ingestión y docker pull openmetadata/server.
+
+•	Ejecutar contenedores 
+
+Configuración y ejecución de lo contenedores 
+
+## Referencias 
+1.	Postman documentation overview | Postman Learning Center. (2023, 19 octubre). Postman Learning Center. https://learning.postman.com/docs/introduction/overview/
+2.	Rodríguez, D. (2018, 26 octubre). Archivos JSON con Python: lectura y escritura. Analytics Lane. https://www.analyticslane.com/2018/07/16/archivos-json-con-python/#google_vignette 
+3.	GeoJSON—Portal for ArcGIS | Documentación de ArcGIS Enterprise. (s. f.). https://enterprise.arcgis.com/es/portal/latest/use/geojson.htm
+4.	 Iqbal, K. (2019, 10 septiembre). TIFF - Formato de archivo de imagen. https://docs.fileformat.com/es/image/tiff/
+5.	Craigloewen-Msft. (2023, 28 agosto). Instalación de WSL. Microsoft Learn. https://learn.microsoft.com/es-es/windows/wsl/install  
+6.	Equipo editorial de IONOS. (2023, 1 marzo). XAMPP: instalación y primeros pasos. IONOS Digital Guide. https://www.ionos.mx/digitalguide/servidores/herramientas/instala-tu-servidor-local-xampp-en-unos-pocos-pasos/
+7.	¿Qué es un catálogo de datos? | IBM. (s. f.). https://www.ibm.com/mx-es/topics/data-catalog
+
+8.	Podman Installation | Podman. (s. f.). https://podman.io/docs/installation
+9.	Create your first collection | Postman Learning Center. (2024, 24 mayo). Postman Learning Center. https://learning.postman.com/docs/getting-started/first-steps/creating-the-first-collection/
+10.	Cómo Instalar PostgreSQL 2024 actualizado en Windows 11 - Blog Grupo Codesi. (s. f.). Grupo Codesi. https://www.grupocodesi.com/blog/instalar-postgresql.html
