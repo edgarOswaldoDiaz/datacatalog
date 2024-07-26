@@ -206,7 +206,7 @@ cd api-server
 npm init -y
 
 <div align="center">
-  <img src="Imagecatalogo/conpapi1.PNG/" alt="wls21" width="500"/>
+  <img src="Imagecatalogo/conpapi1.PNG" alt="wls21" width="500"/>
 </div>
  
 2. Instalar Express
