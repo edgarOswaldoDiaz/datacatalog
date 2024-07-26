@@ -126,7 +126,7 @@ Es importante asignar un nombre de usuario y un rol.
 
 ### Instalación de docker
 
-buscaremos lo que es docker, ingresaremos al link que dice docker desktop, que sería docker escritorio.
+Buscaremos lo que es docker, ingresaremos al link que dice docker desktop, que sería docker escritorio.
   
  
 A continuación, en la página seleccionaremos lo que es download for Windows esto teniendo en cuenta que nosotros estamos utilizando Windows con la virtualización WSL2.
