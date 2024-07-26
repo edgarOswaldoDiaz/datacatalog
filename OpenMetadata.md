@@ -117,6 +117,14 @@ Para protegerse contra estas vulnerabilidades y asegurar las implementaciones de
       <th>Desventajas</th>
     </tr>
   </thead>
+  <tbody>
+    <tr>
+      <td>Fila 1Facilita la gobernanza, el descubrimiento y la colaboración de datos en diversas fuentes de datos.</td>
+      <td>No es inmune a las vulnerabilidades de seguridad.</td>
+    </tr>
+
+
+   </tbody>
 </table>
 
 ## Conclusión general
