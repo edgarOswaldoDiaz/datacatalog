@@ -14,7 +14,7 @@ def wolframalpha_search(query, app_id):
     
     return response.text  # Devuelve el contenido de la respuesta como texto.
 
-app_id = '96KKG9-TYAU97K969'  # Definicion la clave de aplicación para acceder a la API de WolframAlpha.
+app_id = ''  # Definicion la clave de aplicación para acceder a la API de WolframAlpha.
 
 query = 'Next solar eclipse date'  # Define el término de búsqueda como "Fecha del proximo eclipse solar".
 

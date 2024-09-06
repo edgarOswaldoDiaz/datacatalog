@@ -19,10 +19,10 @@ def google_search(query, api_key, cse_id):
     return response.json()
 
 # Asigna tu clave de API a la variable api_key
-api_key = 'AIzaSyA4Cm5Hn5D3ojhzvVTLw2KAuNq_ZgTOAWk '
+api_key = ''
 
 # Asigna tu ID de motor de búsqueda personalizado a la variable cse_id
-cse_id = 'b45faf550379941a9'
+cse_id = ''
 
 # Define la consulta de búsqueda que quieres realizar
 query = 'OpenAI'
