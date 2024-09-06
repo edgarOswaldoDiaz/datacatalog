@@ -23,7 +23,7 @@ Para ejecutar este proyecto, necesitarás obtener credenciales específicas para
 
 ## Requisitos
 
-Una vez generado las credenciales de las APIs y antes de ejecutar los archivos, es necesario tener los siguientes requisitos:
+Una vez generado las credenciales de las APIs, es necesario tener los siguientes requisitos:
 
 1. **Python**: Asegúrate de tener Python instalado en tu sistema. Puedes verificar la instalación ejecutando el siguiente comando en la terminal:
 
