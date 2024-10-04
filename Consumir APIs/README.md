@@ -1,6 +1,6 @@
 # Proyecto de Consultas con APIs de Google y Wolfram Alpha
 
-Este proyecto permite realizar consultas automatizadas utilizando las APIs de Google y Wolfram Alpha a partir de los datos del **DENUE (Directorio Estadístico Nacional de Unidades Económicas)**. Los scripts están diseñados para interactuar con los datos proporcionados en un archivo Excel y realizar búsquedas personalizadas de manera eficiente.
+Este proyecto permite realizar consultas automatizadas utilizando las APIs de Google, DuckDuckGo y Wolfram Alpha a partir de los datos del **DENUE (Directorio Estadístico Nacional de Unidades Económicas)**. Los scripts están diseñados para interactuar con los datos proporcionados en un archivo Excel y realizar búsquedas personalizadas de manera eficiente.
 
 ## Requisitos Previos
 
