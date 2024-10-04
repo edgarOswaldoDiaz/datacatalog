@@ -36,7 +36,9 @@ Una vez que tengas las claves de API, es necesario instalar las bibliotecas de P
 
 Ejecuta el siguiente comando para instalar las dependencias:
 
-- **pip install google-api-python-client pandas**
+```bash
+pip install google-api-python-client pandas
+ ```
 
 ## Configuración y Ejecución de los Scripts
 
